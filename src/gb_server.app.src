@@ -1,0 +1,16 @@
+%% auther: hanyan
+%% email: ithinkily@vip.qq.com
+%% date: 2017.11.07
+
+{application, gb_server,
+ [
+  {description, "This is a GoBallistic game server"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { gb_server_app, []}},
+  {env, []}
+ ]}.

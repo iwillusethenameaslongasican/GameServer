@@ -1,0 +1,2 @@
+cd ../ebin
+erl +P 1024000 +K true  -boot start_sasl -config log -pa ../deps/*/ebin -s gb start  -extra 127.0.0.1 6666

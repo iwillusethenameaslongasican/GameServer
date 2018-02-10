@@ -1,0 +1,8 @@
+2018-01-10 16:09:55.237 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-10 16:09:55.366 [info] <0.31.0> Application mnesia started on node nonode@nohost
+2018-01-10 16:09:55.376 [error] <0.138.0>@db_util:do:57 CRASH REPORT Process <0.138.0> with 0 neighbours exited with reason: no match of right hand value {aborted,{no_exists,account}} in db_util:do/1 line 57 in gen_server:init_it/6 line 352
+2018-01-10 16:09:55.377 [error] <0.91.0>@gb_network:start_id:64 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{{badmatch,{aborted,{no_exists,account}}},[{db_util,do,1,[{file,"src/db/db_util.erl"},{line,57}]},{mod_id,init,1,[{file,"src/mod/mod_id.erl"},{line,28}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,mod_id,{mod_id,start_link,[]},permanent,10000,supervisor,[mod_id]}}} in gb_network:start_id/0 line 64 in application_master:init/4 line 134
+2018-01-10 16:10:04.407 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-10 16:10:04.516 [info] <0.31.0> Application mnesia started on node nonode@nohost
+2018-01-10 16:10:04.526 [info] <0.136.0>@mod_id:init:34 RoleId: 9
+2018-01-10 16:10:04.533 [info] <0.31.0> Application gb_server started on node nonode@nohost

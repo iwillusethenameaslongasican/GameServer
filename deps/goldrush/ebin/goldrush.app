@@ -1,0 +1,9 @@
+{application,goldrush,
+             [{description,[]},
+              {vsn,"0.1.0"},
+              {registered,[]},
+              {applications,[kernel,stdlib,syntax_tools]},
+              {mod,{gr_app,[]}},
+              {env,[]},
+              {modules,[glc,glc_code,glc_lib,glc_ops,gr_app,gr_context,gr_sup,
+                        gre]}]}.

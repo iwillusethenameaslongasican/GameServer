@@ -1,0 +1,38 @@
+ //发送私聊请求
+ message c2s_chat_request
+ {
+ 	required uint32 id = 1; 	//对方id
+ 	required string content = 2;
+ }
+
+ //私聊请求回包
+ message s2c_chat_reply
+ {
+ 	required uint32 id = 1;	  //对方id
+ 	required string content = 2;
+ 	required time_section time = 3;
+ }
+
+ //发送群聊请求 
+message c2s_group_chat_request  
+{  
+    required string content = 1;
+} 
+
+//群聊请求回包
+message s2c_group_chat_reply
+{
+	required uint32 id = 1;
+	required string content = 2;
+	required time_section time = 3;
+} 
+
+message time_section
+{
+	required uint32 year = 1;
+	required uint32 month = 2;
+	required uint32 day = 3;
+	required uint32 hour = 4;
+	required uint32 minu = 5;
+	required uint32 sec = 6;
+}

@@ -1,0 +1,94 @@
+// 请求战斗协议
+message c2s_start_fight_request{
+	
+}
+
+//请求战斗返回协议
+message s2c_start_fight_reply{
+	required int32 ret = 1;
+}
+
+//进入战斗请求协议
+message c2s_fight_request{
+	
+}
+
+//进入战斗返回协议
+message s2c_fight_reply{
+	required uint32 count = 1;
+	repeated object_info objects = 2;
+}
+
+//位置同步协议
+message c2s_update_unit_request{
+	required int32 pos_x = 1;
+	required int32 pos_y = 2;
+	required int32 pos_z = 3;
+	required int32 rot_x = 4;
+	required int32 rot_y = 5;
+	required int32 rot_z = 6;
+	required int32 gun_rot = 7;
+	required int32 gun_roll = 8;
+}
+
+//位置同步协议
+message s2c_update_unit_reply{
+	required uint32 id = 1;
+	required int32 pos_x = 2;
+	required int32 pos_y = 3;
+	required int32 pos_z = 4;
+	required int32 rot_x = 5;
+	required int32 rot_y = 6;
+	required int32 rot_z = 7;
+	required int32 gun_rot = 8;
+	required int32 gun_roll = 9;
+}
+
+//发射炮弹
+message c2s_shooting_request{
+	required int32 pos_x = 1;
+	required int32 pos_y = 2;
+	required int32 pos_z = 3;
+	required int32 rot_x = 4;
+	required int32 rot_y = 5;
+	required int32 rot_z = 6;
+}
+
+//发射炮弹
+message s2c_shooting_reply{
+	required uint32 id = 1;
+	required int32 pos_x = 2;
+	required int32 pos_y = 3;
+	required int32 pos_z = 4;
+	required int32 rot_x = 5;
+	required int32 rot_y = 6;
+	required int32 rot_z = 7;
+}
+
+//击中协议
+message c2s_hit_request{
+	required uint32 enemy_id = 1;
+	required int32 damage = 2;
+}
+
+//击中协议
+message s2c_hit_reply{
+	required uint32 id = 1;
+	required uint32 enemy_id = 2;
+	required int32 damage = 3;
+}
+
+//胜负判断
+message c2s_result_request{
+
+}
+
+message s2c_result_reply{
+	required int32 camp = 1;
+}
+
+message object_info{
+	required uint32 id = 1;
+	required int32 team = 2;
+	required int32 swop_id = 3;
+}

@@ -1,0 +1,72 @@
+//获取玩家成绩
+message c2s_get_achieve_request{
+	required uint32 id 		= 1;
+}
+
+message s2c_get_achieve_reply{
+	required uint32 id 		= 1;
+	required uint32 win 	= 2;
+	required uint32 fail 	= 3;
+}
+
+//获取房间列表
+message c2s_get_room_list_request{
+	
+}
+
+message s2c_get_room_list_reply{
+	required uint32 num = 1;
+	repeated room_info rooms = 2;
+}
+
+//创建房间
+message c2s_create_room_request{
+}
+
+message s2c_create_room_reply{
+	required int32 ret = 1;
+	required uint32 room_id = 2;
+}
+
+//进入房间
+message c2s_enter_room_request{
+	required int32 room_id = 1;
+}
+
+message s2c_enter_room_reply{
+	required int32 ret = 1;
+	required uint32 room_id = 2;
+}
+
+//获取房间信息
+message c2s_get_room_info_request{
+	required uint32 room_id = 1;
+}
+
+message s2c_get_room_info_reply{
+	required uint32 num = 1;
+	repeated role_info roles = 2;
+}
+
+//离开房间
+message c2s_leave_room_request{
+	required uint32 room_id = 1;
+}
+
+message s2c_leave_room_reply{
+	required int32 ret = 1;
+}
+
+message room_info{
+	required uint32 room_id = 1;
+	required uint32 num = 2;
+	required int32 status = 3;
+}
+
+message role_info{
+	required uint32 id = 1;
+	required int32 team = 2;
+	required uint32 win = 3;
+	required uint32 fail = 4;
+	required int32 is_owner = 5;
+}
