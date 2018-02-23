@@ -13,10 +13,7 @@ start([Ip, Port]) ->
 	ok = start_kernel(),
 	ok = start_client(),
 	ok = start_id(),
-	% ok = start_fight(),
 	ok = start_tcp(Port).
-	% ok = start_scene().
-	% ok = start_scene(),
 	% ok = start_rank().
 
 %% 开启核心服务
@@ -30,15 +27,15 @@ start_kernel() ->
 	ok.
 
 
-%% 随机种子
-start_rand() ->
-	{ok, _} = supervisor:start_child(
-				gb_sup,
-				{mod_rand,
-				{mod_rand, start_link, []},
-				permanent, 10000, supervisor, [mod_rand]}
-		),
-	ok.
+% %% 随机种子
+% start_rand() ->
+% 	{ok, _} = supervisor:start_child(
+% 				gb_sup,
+% 				{mod_rand,
+% 				{mod_rand, start_link, []},
+% 				permanent, 10000, supervisor, [mod_rand]}
+% 		),
+% 	ok.
 
 %% 开启客户端监控树
 start_client() ->
@@ -65,28 +62,28 @@ start_tcp(Port) ->
 start_id() ->
 	{ok, _} = supervisor:start_child(
 				gb_sup,
-				{mod_id,
-				{mod_id, start_link, []},
-				permanent, 10000, supervisor, [mod_id]}
+				{id_serv,
+				{id_serv, start_link, []},
+				permanent, 10000, supervisor, [id_serv]}
 		),
 	ok.
 
-%% 开启场景监控树
-start_scene() ->
-	{ok, _} = supervisor:start_child(
-				gb_sup,
-				{gb_scene_sup,
-				{gb_scene_sup, start_link, []},
-				permanent, 10000, supervisor, [gb_scene_sup]}
-		),
-	ok.
+% %% 开启场景监控树
+% start_scene() ->
+% 	{ok, _} = supervisor:start_child(
+% 				gb_sup,
+% 				{gb_scene_sup,
+% 				{gb_scene_sup, start_link, []},
+% 				permanent, 10000, supervisor, [gb_scene_sup]}
+% 		),
+% 	ok.
 
-%% 开启排行榜监控树
-start_rank() ->
-	{ok, _} = supervisor:start_child(
-				gb_sup,
-				{mod_rank,
-				{mod_rank, start_link, []},
-				permanent, 10000, supervisor, [mod_rand]}
-		),
-	ok.
+% %% 开启排行榜监控树
+% start_rank() ->
+% 	{ok, _} = supervisor:start_child(
+% 				gb_sup,
+% 				{mod_rank,
+% 				{mod_rank, start_link, []},
+% 				permanent, 10000, supervisor, [mod_rand]}
+% 		),
+% 	ok.

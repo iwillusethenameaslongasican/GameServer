@@ -1,43 +1,42 @@
  //发送登录请求  
 message c2s_login_request  
 {  
-    required string username = 1;//账号  
-    required string password = 2;//密码   
+    required string username     = 1; 
+    required string password     = 2;  
 }  
 //登录请求回包数据  
 message s2c_login_reply  
 {  
-    required uint32 result_code = 1;   // 0错误 1正确
+    required uint32 result_code  = 1;   
     required uint32 id = 2;
 } 
 
 //发送注册协议
 message c2s_register_request
 {
-	required string username = 1;//账号  
-    required string password = 2;//密码 
+    required string username     = 1; 
+    required string password     = 2;
 } 
 //登录请求回包数据  
 message s2c_register_reply  
 {  
-    required uint32 result_code = 1;   // 0错误 1正确
+    required uint32 result_code  = 1;  
 } 
 
 //登出请求协议
 message c2s_logout_request{
-	required uint32 id = 1;
 }
 
 //登出请求回包数据
 message s2c_logout_reply{
-	required int32 ret = 1	;
+    required int32 ret          = 1;
 }
 
 //心跳协议
 message c2s_heartbeat_request{
-	
+    
 }
 
 message s2c_heartbeat_reply{
-	
+    
 }

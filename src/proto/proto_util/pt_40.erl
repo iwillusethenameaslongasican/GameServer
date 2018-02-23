@@ -14,22 +14,30 @@
 %%私聊请求
 read(40001, <<Bin/binary>>) ->
   lager:info("chat"),
-  _Msg = chat_pb:decode_c2s_chat_request(Bin),
-  {ok, []};
+  Msg = chat_pb:decode_c2s_chat_request(Bin),
+  #c2s_chat_request{id = Id, content = Content} = Msg,
+  {ok, [Id, Content]};
 
- %%群聊请求
+ %%队伍聊天请求
 read(40003, <<Bin/binary>>) ->
   lager:info("group chat"),
   Msg = chat_pb:decode_c2s_group_chat_request(Bin),
   #c2s_group_chat_request{content = Content} = Msg,
   {ok, [Content]};
 
+ %%群聊请求
+read(40005, <<Bin/binary>>) ->
+  lager:info("world chat"),
+  Msg = chat_pb:decode_c2s_world_chat_request(Bin),
+  #c2s_world_chat_request{content = Content} = Msg,
+  {ok, [Content]};
+
  read(_Cmd, _R) ->
     {error, no_match}.
 
-write(40002, {RoleId, Content}) -> 
-    Msg = #s2c_chat_reply{id = RoleId, content = Content},
-    % lager:info("Msg: ~p", [Msg]),  
+write(40002, {RoleId, Content, Time}) -> 
+    Msg = #s2c_chat_reply{id = RoleId, content = Content, time = Time},
+    lager:info("Msg: ~p", [Msg]),  
     Pkt = chat_pb:encode_s2c_chat_reply(Msg),
     NewPkt = encode(s2c_chat_reply, Pkt),
     {ok, NewPkt};
@@ -39,6 +47,13 @@ write(40002, {RoleId, Content}) ->
     lager:info("Msg: ~p", [Msg]),  
     Pkt = chat_pb:encode_s2c_group_chat_reply(Msg),
     NewPkt = encode(s2c_group_chat_reply, Pkt),
+    {ok, NewPkt};
+
+ write(40006, {RoleId, Content, Time}) -> 
+    Msg = #s2c_world_chat_reply{id = RoleId, content = Content, time = Time},
+    lager:info("Msg: ~p", [Msg]),  
+    Pkt = chat_pb:encode_s2c_world_chat_reply(Msg),
+    NewPkt = encode(s2c_world_chat_reply, Pkt),
     {ok, NewPkt};
 
  write(_Cmd, _R) ->
@@ -55,6 +70,12 @@ encode(c2s_group_chat_request, Msg)->
    encode_1(Id, Msg);
 encode(s2c_group_chat_reply, Msg) ->
     Id = proto_util:name_to_id(s2c_group_chat_reply),
+    encode_1(Id, Msg);
+encode(c2s_world_chat_request, Msg)->
+   Id = proto_util:name_to_id(c2s_world_chat_request),
+   encode_1(Id, Msg);
+encode(s2c_world_chat_reply, Msg) ->
+    Id = proto_util:name_to_id(s2c_world_chat_reply),
     encode_1(Id, Msg);
 encode(Undefied, _Msg) ->
     undefied.

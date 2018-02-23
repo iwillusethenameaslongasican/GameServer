@@ -27,8 +27,9 @@ read(50003, <<Bin/binary>>) ->
 %%删除好友
 read(50005, <<Bin/binary>>) ->
   lager:info("del_friend"),
-  _Msg = friend_pb:decode_c2s_del_friend_request(Bin),
-  {ok, []};
+  Msg = friend_pb:decode_c2s_del_friend_request(Bin),
+  #c2s_del_friend_request{id = Id} = Msg,
+  {ok, [Id]};
 
 %%好友资料
 read(50007, <<Bin/binary>>) ->

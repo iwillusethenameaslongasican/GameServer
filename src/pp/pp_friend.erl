@@ -28,5 +28,12 @@ handle(50003, Status, Data) ->
 	{ok, Pkt} = pt_50:write(proto_util:name_to_id(s2c_add_friend_reply), {Ret}),
 	lib_send:send(Socket, Pkt);
 
+handle(50005, Status, Data) ->
+	[FriendId] = Data,
+	#ets_role{id = RoleId, socket = Socket} = Status,
+	{Ret} = lib_friend:del_friend(RoleId, FriendId),
+	{ok, Pkt} = pt_50:write(proto_util:name_to_id(s2c_del_friend_reply), {Ret}),
+	lib_send:send(Socket, Pkt);
+
 handle(_, [], _Date) ->
-	false
+	false.

@@ -27,7 +27,7 @@ handle(20005, Status, Data) ->
 
 handle(20007, Status, Data) ->
 	#ets_role{id = RoleId, socket = Socket, win = Win, fail = Fail} = Status,
-	{Ret, RoomId} = mod_scene:create_room(RoleId, Win, Fail),
+	{Ret, RoomId} = lib_scene:create_room(RoleId, Win, Fail),
 	{ok, Pkt} = pt_20:write(proto_util:name_to_id(s2c_create_room_reply), {Ret, RoomId}),
 	lib_send:send(Socket, Pkt),
 	case Ret of
@@ -41,10 +41,10 @@ handle(20007, Status, Data) ->
 handle(20009, Status, Data) ->
 	[RoomId] = Data,
 	#ets_role{id = RoleId, socket = Socket, win = Win, fail = Fail} = Status,
-	{Ret, Sockets} = mod_scene:enter_room(RoomId, RoleId, Win, Fail),
+	{Ret, Sockets} = lib_scene:enter_room(RoomId, RoleId, Win, Fail),
 	{ok, Pkt1} = pt_20:write(proto_util:name_to_id(s2c_enter_room_reply), {Ret, RoomId}),
 	lib_send:send(Socket, Pkt1),
-	{Num, RoleInfos} = mod_scene:get_room_info(RoomId),
+	{Num, RoleInfos} = lib_scene:get_room_info(RoomId),
 	{ok, Pkt2} = pt_20:write(proto_util:name_to_id(s2c_get_room_info_reply), {Num, RoleInfos}),
 	lib_send:broadcast(Sockets, Pkt2),
 	case Ret of
@@ -58,19 +58,19 @@ handle(20009, Status, Data) ->
 handle(20011, Status, Data) ->
 	[RoomId] = Data,
 	#ets_role{socket = Socket} = Status,
-	{Num, RoleInfos} = mod_scene:get_room_info(RoomId),
+	{Num, RoleInfos} = lib_scene:get_room_info(RoomId),
 	{ok, Pkt} = pt_20:write(proto_util:name_to_id(s2c_get_room_info_reply), {Num, RoleInfos}),
 	lib_send:send(Socket, Pkt);
 
 handle(20013, Status, Data) ->
 	[RoomId] = Data,
 	#ets_role{id = RoleId, socket = Socket} = Status,
-	{Ret} = mod_scene:leave_room(RoomId, RoleId),
+	{Ret} = lib_scene:leave_room(RoomId, RoleId),
 	{ok, Pkt1} = pt_20:write(proto_util:name_to_id(s2c_leave_room_reply), {Ret}),
 	lib_send:send(Socket, Pkt1),
-	{Num, RoleInfos} = mod_scene:get_room_info(RoomId),
+	{Num, RoleInfos} = lib_scene:get_room_info(RoomId),
 	{ok, Pkt2} = pt_20:write(proto_util:name_to_id(s2c_get_room_info_reply), {Num, RoleInfos}),
-	Sockets = mod_scene:get_sockets(RoleInfos),
+	Sockets = lib_scene:get_sockets(RoleInfos),
 	lib_send:broadcast(Sockets, Pkt2),
 	case Ret of
 		1 ->

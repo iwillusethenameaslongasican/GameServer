@@ -53,7 +53,7 @@ login_parse_packet(Socket, Role) ->
 					Ref1 = async_recv(Socket, Len, ?TCP_TIMEOUT),
 					receive
 						{inet_async, Socket, Ref1, {ok, <<Cmd:32/little, Binary/binary>>}} ->
-							case routing(Cmd, Binary) of
+							case routing(Cmd, Binary) of %% 根据协议号进行路有
 								%% 先验证登陆
 								{ok, login, Data} ->
 									case pp_account:handle(Cmd, [], Data) of
@@ -63,8 +63,8 @@ login_parse_packet(Socket, Role) ->
 											Password = Row#account.password,
 											Win = Row#account.win,
 											Fail = Row#account.fail,
-											% lager:info("Id, UserName, Win, Fail: ~p", [{Id, UserName, Password, Win, Fail}]),
-											{ok, Pid} = mod_login:login(start, [Id, UserName, Password, Win, Fail], Socket),
+											%%登陆
+											{ok, Pid} = lib_login:login(start, [Id, UserName, Password, Win, Fail], Socket),
 											Role1 = Role#role{
 												accname = UserName,
 												pid = Pid
@@ -77,6 +77,7 @@ login_parse_packet(Socket, Role) ->
 											lib_send:send(Socket, Pkt),
 											login_lost(Socket, Role, 0, "login fail")
 									end;
+								%% 注册
 								{ok, register, Data} ->
 									case pp_account:handle(Cmd, [], Data) of
 										true ->
@@ -95,6 +96,7 @@ login_parse_packet(Socket, Role) ->
 				_ ->
 					lager:info("len < 0")
 			end;
+			%% 超时
 		{inet_async, Socket, Ref, {error, timeout}} ->
 			case Role#role.timeout >= ?HEART_TIMEOUT_TIME of
 				true ->
@@ -119,7 +121,7 @@ login_parse_packet(Socket, Role) ->
  					Ref1 = async_recv(Socket, Len, ?TCP_TIMEOUT),
  					receive
  						{inet_async, Socket, Ref1, {ok, <<Cmd:32/little, Binary/binary>>}} ->
- 							case routing(Cmd, Binary) of
+ 							case routing(Cmd, Binary) of %%根据协议号进行路由
  								%% 这里是处理游戏逻辑
  								{ok, Data} ->
  									case catch gen:call(Role#role.pid, '$gen_call', {'SOCKET_EVENT', Cmd, Data}) of
@@ -158,7 +160,7 @@ login_lost(Socket, _Client, _Cmd, Reason) ->
 	exit({unexpected_message, Reason}).
 
 do_lost(_Socket, Role, _Cmd, Reason) ->
-	mod_login:logout(Role#role.pid, "unexpected_message"),
+	lib_login:logout(Role#role.pid, "unexpected_message"),
 	exit({unexpected_message, Reason}).
 
 %% 路由

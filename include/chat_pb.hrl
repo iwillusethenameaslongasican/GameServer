@@ -31,6 +31,22 @@
 }).
 -endif.
 
+-ifndef(C2S_WORLD_CHAT_REQUEST_PB_H).
+-define(C2S_WORLD_CHAT_REQUEST_PB_H, true).
+-record(c2s_world_chat_request, {
+    content = erlang:error({required, content})
+}).
+-endif.
+
+-ifndef(S2C_WORLD_CHAT_REPLY_PB_H).
+-define(S2C_WORLD_CHAT_REPLY_PB_H, true).
+-record(s2c_world_chat_reply, {
+    id = erlang:error({required, id}),
+    content = erlang:error({required, content}),
+    time = erlang:error({required, time})
+}).
+-endif.
+
 -ifndef(TIME_SECTION_PB_H).
 -define(TIME_SECTION_PB_H, true).
 -record(time_section, {

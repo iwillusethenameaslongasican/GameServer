@@ -74,5 +74,6 @@ init_ets() ->
 	ets:new(?ETS_ONLINE, [{keypos, #ets_online.id}, named_table, public, set]), %% 用户在线列表
 	ets:new(?ETS_ROLE, [{keypos, #ets_role.id}, named_table, public, set]),
 	ets:new(?ETS_SCENE, [{keypos, #ets_scene.id}, named_table, public, set]),
+	ets:new(?ETS_FRIEND, [{keypos, #ets_friend.id}, named_table, public, set]),
 	ok.
 

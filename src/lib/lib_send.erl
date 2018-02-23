@@ -8,7 +8,7 @@
 
 -module(lib_send).
 
--export([send/2, broadcast/2]).
+-export([send/2, broadcast/2, broadcast/1]).
 -compile(export_all).
 
 
@@ -23,3 +23,12 @@ broadcast(Sockets, Msg) ->
 			send(Socket, Msg)
 		end,
 	lists:foreach(Fun, Sockets).
+
+broadcast(Msg) ->
+	L = ets:match_object(?ETS_ROLE, #ets_role{_='_'}),
+    Fun = fun(Role, Lists) ->
+        #ets_role{socket = Socket} = Role,
+        [Socket|Lists]
+    end,
+    Sockets = lists:foldl(Fun, [], L),
+   	broadcast(Sockets, Msg).

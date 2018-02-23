@@ -41,7 +41,7 @@ handle(10005, Status, Data) ->
 	lib_send:send(Socket, Pkt),
 	pp_scene:handle(20013, Status, [RoomId]),
 	ets:delete(?ETS_ROLE, RoleId),
-	mod_login:logout(Pid, Status, "");
+	lib_login:logout(Pid, Status, "");
 
 handle(10007, Status, Data) ->
 	#ets_role{socket = Socket} = Status,

@@ -82,6 +82,10 @@ id_to_name(40003) ->
 	c2s_group_chat_request;
 id_to_name(40004) ->
 	s2c_group_chat_reply;
+id_to_name(40005) ->
+	c2s_world_chat_request;
+id_to_name(40006) ->
+	s2c_world_chat_reply;
 id_to_name(50001) ->
 	c2s_friend_list_request;
 id_to_name(50002) ->
@@ -171,6 +175,10 @@ name_to_id(c2s_group_chat_request) ->
 	40003;
 name_to_id(s2c_group_chat_reply) ->
 	40004;
+name_to_id(c2s_world_chat_request) ->
+	40005;
+name_to_id(s2c_world_chat_reply) ->
+	40006;
 name_to_id(c2s_friend_list_request) ->
 	50001;
 name_to_id(s2c_friend_list_reply) ->

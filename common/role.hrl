@@ -25,11 +25,6 @@
 		roles
 	}).
 
-% %% 登陆验证
-% -record(ets_account, {
-% 		 account,
-% 		 password
-% 	}).
 
 %% 角色信息
 -record(ets_role, {
@@ -58,8 +53,9 @@
 		image,
 		win,
 		fail
-	})
+	}).
 
 -record(account, {id, username, password, win, fail}).
+-record(friends, {id, friend_list}).
 
 -record(fight_info, {id, last_update_time, pos_x, pos_y, pos_z, last_shoot_time, team, hp, rpid, socket}).

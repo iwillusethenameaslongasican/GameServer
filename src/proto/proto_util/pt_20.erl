@@ -27,7 +27,7 @@ read(20003, <<Bin/binary>>) ->
 %%获取房间列表
 read(20005, <<Bin/binary>>) ->
 	lager:info("get_room_list"),
-    Rooms = mod_scene:get_room_list(),
+    Rooms = lib_scene:get_room_list(),
     Num = length(Rooms),
     {ok,  [Rooms, Num]};
 
