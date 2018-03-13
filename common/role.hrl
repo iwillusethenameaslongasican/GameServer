@@ -58,4 +58,4 @@
 -record(account, {id, username, password, win, fail}).
 -record(friends, {id, friend_list}).
 
--record(fight_info, {id, last_update_time, pos_x, pos_y, pos_z, last_shoot_time, team, hp, rpid, socket}).
+-record(fight_info, {id, last_update_time, pos_x, pos_y, pos_z, last_shoot_time, team, hp, bullet, rpid, socket}).

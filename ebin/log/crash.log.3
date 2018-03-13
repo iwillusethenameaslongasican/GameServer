@@ -1,0 +1,1092 @@
+2017-12-30 16:49:38 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,binary_to_list,[5120],[]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,60}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 118
+  neighbours:
+2017-12-30 16:49:38 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 16:50:49 =CRASH REPORT====
+  crasher:
+    initial call: gb_tcp_listener:init/1
+    pid: <0.97.0>
+    registered_name: []
+    exception exit: {{cannot_listen,eaddrinuse},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.95.0>,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.95.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 692
+  neighbours:
+2017-12-30 18:23:30 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,5,97,103,108,97,98,18,3,49>>,4,string],[{file,"src/protobuffs.erl"},{line,364}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,225}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 796
+  neighbours:
+2017-12-30 18:23:30 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 18:31:35 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: {undef,[{player_pb,decode,[<<12,0,0,0,10,5,97,103,108,97,98,18,3,49>>],[]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 751
+  neighbours:
+2017-12-30 18:31:35 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     undef
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 18:39:01 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,5,97,103,108,97,98,18,3,49>>,4,string],[{file,"src/protobuffs.erl"},{line,364}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,225}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 783
+  neighbours:
+2017-12-30 18:39:01 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 18:45:55 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,5,97,103,108,97,98,18,3,49>>,4,string],[{file,"src/protobuffs.erl"},{line,364}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,225}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 786
+  neighbours:
+2017-12-30 18:45:55 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 19:01:01 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: {undef,[{lager,info,["protobuffs Bytes: ~p",[{<<12,0,0,0,10,5,97,103,108,97,98,18,3,49>>,string}]],[]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,224}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 793
+  neighbours:
+2017-12-30 19:01:01 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     undef
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 19:04:33 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.114.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,5,97,103,108,97,98,18,3,49>>,4,string],[{file,"src/protobuffs.erl"},{line,365}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,226}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.98.0>]
+    messages: []
+    links: [<0.100.0>,#Port<0.3133>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 796
+  neighbours:
+2017-12-30 19:04:33 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.114.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 19:07:11 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,5,97,103,108,97,98,18,3,49>>,4,string],[{file,"src/protobuffs.erl"},{line,366}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,227}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 809
+  neighbours:
+2017-12-30 19:07:11 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 19:12:15 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,5,97,103,108,97,98,18,3,49>>,4,string],[{file,"src/protobuffs.erl"},{line,367}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,228}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 837
+  neighbours:
+2017-12-30 19:12:15 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 19:16:47 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.109.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,5,97,103,108,97,98,18,3,49>>,4,string],[{file,"src/protobuffs.erl"},{line,367}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,228}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3132>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 807
+  neighbours:
+2017-12-30 19:16:47 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.109.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 19:18:35 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.110.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,5,97,103,108,97,98,18,3,49>>,4,string],[{file,"src/protobuffs.erl"},{line,367}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,228}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3133>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 807
+  neighbours:
+2017-12-30 19:18:35 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.110.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 19:20:51 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.111.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,5,97,103,108,97,98,18,3,49>>,4,string],[{file,"src/protobuffs.erl"},{line,367}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,228}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3134>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 807
+  neighbours:
+2017-12-30 19:20:51 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.111.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 19:24:28 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.112.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,5,97,103,108,97,98,18,3,49>>,4,string],[{file,"src/protobuffs.erl"},{line,367}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,228}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3135>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 807
+  neighbours:
+2017-12-30 19:24:28 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.112.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 19:48:38 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,split_binary,[<<"1">>,3],[]},{protobuffs,decode_value,3,[{file,"src/protobuffs.erl"},{line,330}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,225}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 847
+  neighbours:
+2017-12-30 19:48:38 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 19:57:42 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,split_binary,[<<"1">>,3],[]},{protobuffs,decode_value,3,[{file,"src/protobuffs.erl"},{line,330}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,225}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 847
+  neighbours:
+2017-12-30 19:57:42 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 20:26:14 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: {undef,[{pt_10,encode,[{c2s_login_request,"hello world","world"}],[]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,65}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 349
+  neighbours:
+2017-12-30 20:26:14 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     undef
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 20:27:57 =CRASH REPORT====
+  crasher:
+    initial call: gb_tcp_listener:init/1
+    pid: <0.97.0>
+    registered_name: []
+    exception exit: {{cannot_listen,eaddrinuse},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.95.0>,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.95.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 692
+  neighbours:
+2017-12-30 20:29:27 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: {undef,[{player_pb,iolist,[c2s_login_request,{c2s_login_request,"hello world","world"}],[]},{pt_10,encode,1,[{file,"src/proto/proto_util/pt_10.erl"},{line,115}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,65}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 379
+  neighbours:
+2017-12-30 20:29:27 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     undef
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2017-12-30 21:03:00 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: {undef,[{player_pb,decode_s2c_login_request,[<<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>],[]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,67}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 924
+  neighbours:
+2017-12-30 21:03:00 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     undef
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-01 18:26:48 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception throw: {{error,"Error decoding type"},[{protobuffs,read_field_num_and_wire_type,1,[{file,"src/protobuffs.erl"},{line,212}]},{protobuffs,next_field_num,1,[{file,"src/protobuffs.erl"},{line,251}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,143}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,69}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 1347
+  neighbours:
+2018-01-01 18:26:48 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     {error,"Error decoding type"}
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-01 18:42:08 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.110.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,length,[<<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>],[]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,67}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3179>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 901
+  neighbours:
+2018-01-01 18:42:08 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.110.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-01 18:44:19 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,list_to_binary,[20],[]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,67}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 906
+  neighbours:
+2018-01-01 18:44:19 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-01 18:47:14 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: {{badmatch,<<20>>},[{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 905
+  neighbours:
+2018-01-01 18:47:14 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     {badmatch,<<20>>}
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-01 18:54:20 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: {undef,[{erlang,atom_to_binary,[20],[]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,68}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 922
+  neighbours:
+2018-01-01 18:54:20 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     undef
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-01 18:58:47 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,70}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 1051
+  neighbours:
+2018-01-01 18:58:47 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-01 19:39:13 =CRASH REPORT====
+  crasher:
+    initial call: gb_tcp_listener:init/1
+    pid: <0.97.0>
+    registered_name: []
+    exception exit: {{cannot_listen,eaddrinuse},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.95.0>,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.95.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 692
+  neighbours:
+2018-01-01 19:58:04 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,69}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 389
+  neighbours:
+2018-01-01 19:58:04 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-01 20:00:39 =ERROR REPORT====
+Bad value on output port 'tcp_inet'
+
+2018-01-01 20:00:39 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: {{badmatch,{error,einval}},[{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,79}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 955
+  neighbours:
+2018-01-01 20:00:39 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     {badmatch,{error,einval}}
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-02 14:44:54 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,5,97,103,108,97,98,18,3,49>>,4,string],[{file,"src/protobuffs.erl"},{line,364}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,225}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,88}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 775
+  neighbours:
+2018-01-02 14:44:54 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-02 14:52:26 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.109.0>
+    registered_name: []
+    exception error: bad argument: [{protobuffs,decode_value,[<<0,0,0,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,104,101,108>>,4,string],[{file,"src/protobuffs.erl"},{line,364}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,225}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,88}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3132>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 890
+  neighbours:
+2018-01-02 14:52:26 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.109.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-02 14:55:04 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.110.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,split_binary,[<<"hel">>,5],[]},{protobuffs,decode_value,3,[{file,"src/protobuffs.erl"},{line,330}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,225}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,88}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3133>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 920
+  neighbours:
+2018-01-02 14:55:04 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.110.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-02 14:56:39 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.111.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,split_binary,[<<"wor">>,5],[]},{protobuffs,decode_value,3,[{file,"src/protobuffs.erl"},{line,330}]},{protobuffs,decode,2,[{file,"src/protobuffs.erl"},{line,225}]},{player_pb,decode,3,[{file,"src/player_pb.erl"},{line,158}]},{player_pb,decode,2,[{file,"src/player_pb.erl"},{line,138}]},{pt_10,read,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,17}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,88}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3134>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 922
+  neighbours:
+2018-01-02 14:56:39 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.111.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-02 15:26:45 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{pt_10,encode,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,115}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,65}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 346
+  neighbours:
+2018-01-02 15:26:45 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-02 15:27:20 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.109.0>
+    registered_name: []
+    exception error: bad argument: [{pt_10,encode,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,115}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,65}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3139>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 288
+  neighbours:
+2018-01-02 15:27:20 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.109.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-02 15:29:38 =CRASH REPORT====
+  crasher:
+    initial call: gb_reader:init/0
+    pid: <0.108.0>
+    registered_name: []
+    exception error: bad argument: [{pt_10,encode,2,[{file,"src/proto/proto_util/pt_10.erl"},{line,116}]},{gb_reader,login_parse_packet,2,[{file,"src/gb_reader.erl"},{line,65}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: [gb_tcp_client_sup,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.94.0>,#Port<0.3108>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 501
+  neighbours:
+2018-01-02 15:29:38 =SUPERVISOR REPORT====
+     Supervisor: {local,gb_tcp_client_sup}
+     Context:    child_terminated
+     Reason:     badarg
+     Offender:   [{pid,<0.108.0>},{id,gb_reader},{mfargs,{gb_reader,start_link,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2018-01-02 19:46:03 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[gb_mysql_conn,"localhost",3306,"root","184514","gb_center",#Fun<mod_kernel.0.14344726>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-02 19:50:45 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"localhost",3306,"root","184514","gb_mysql_conn",#Fun<mod_kernel.0.13706730>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-02 19:53:15 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"localhost",3306,"root","184514","gb_mysql_conn",#Fun<mod_kernel.0.13706730>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-02 19:55:08 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"localhost",3306,"root","184514","gb_center",#Fun<mod_kernel.0.26305797>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-02 19:58:14 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"localhost",3306,"root",[],"gb_center",#Fun<mod_kernel.0.65060746>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-02 20:00:15 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"localhost",3306,"root",[],"gb_center",#Fun<mod_kernel.0.65060746>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-02 20:01:17 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"localhost",3306,"root","184514","gb_center",#Fun<mod_kernel.0.26305797>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-02 20:01:49 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"localhost",3306,"root",184514,"gb_center",#Fun<mod_kernel.0.16183729>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-02 20:13:36 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"localhost",3306,"root",184514,"gb_center",#Fun<mod_kernel.0.16183729>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-02 20:19:00 =ERROR REPORT====
+Error in process <0.98.0> with exit value:
+{badarg,[{erlang,iolist_to_binary,[184514],[]},{crypto,hash,2,[{file,"crypto.erl"},{line,225}]},{mysql_auth,password_new,2,[{file,"src/mysql_auth.erl"},{line,195}]},{mysql_auth,do_new_auth,9,[{file,"src/mysql_auth.erl"},{line,79}]},{mysql_conn,mysql_init,6,[{file,"src/mysql_conn.erl"},{line,622}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,347}]}]}
+2018-01-02 20:19:05 =ERROR REPORT====
+Error in process <0.103.0> with exit value:
+{badarg,[{erlang,iolist_to_binary,[184514],[]},{crypto,hash,2,[{file,"crypto.erl"},{line,225}]},{mysql_auth,password_new,2,[{file,"src/mysql_auth.erl"},{line,195}]},{mysql_auth,do_new_auth,9,[{file,"src/mysql_auth.erl"},{line,79}]},{mysql_conn,mysql_init,6,[{file,"src/mysql_conn.erl"},{line,622}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,347}]}]}
+2018-01-02 20:20:04 =ERROR REPORT====
+Error in process <0.98.0> with exit value:
+{badarg,[{erlang,iolist_to_binary,[184514],[]},{crypto,hash,2,[{file,"crypto.erl"},{line,225}]},{mysql_auth,password_new,2,[{file,"src/mysql_auth.erl"},{line,195}]},{mysql_auth,do_new_auth,9,[{file,"src/mysql_auth.erl"},{line,79}]},{mysql_conn,mysql_init,6,[{file,"src/mysql_conn.erl"},{line,622}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,347}]}]}
+2018-01-02 20:51:06 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"localhost",3306,"root","184514","gb_center",#Fun<mod_kernel.0.26305797>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,64}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,42}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-02 20:51:59 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"localhost",3306,"root","184514","gb_center",#Fun<mod_kernel.0.26305797>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,64}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,42}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-02 20:52:28 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"localhost",3306,"root","184514","gb_center",#Fun<mod_kernel.0.26305797>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,64}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,42}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-03 19:04:04 =ERROR REPORT====
+Error in process <0.98.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.98.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-03 19:04:09 =ERROR REPORT====
+Error in process <0.100.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.100.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-03 19:04:14 =ERROR REPORT====
+Error in process <0.115.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.115.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-03 19:04:19 =ERROR REPORT====
+Error in process <0.116.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.116.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-03 19:04:24 =ERROR REPORT====
+Error in process <0.117.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.117.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-03 19:04:29 =ERROR REPORT====
+Error in process <0.118.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.118.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-04 13:20:21 =CRASH REPORT====
+  crasher:
+    initial call: gb_tcp_listener:init/1
+    pid: <0.106.0>
+    registered_name: []
+    exception exit: {{cannot_listen,eaddrinuse},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.104.0>,gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.104.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 692
+  neighbours:
+2018-01-04 13:33:44 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: mod_kernel
+    exception exit: {{bad_return_value,{failed_to_connect_to_database,econnrefused}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,356}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 826
+  neighbours:
+2018-01-04 15:14:19 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.100.0>
+    registered_name: mod_kernel
+    exception exit: {{bad_return_value,{failed_to_connect_to_database,econnrefused}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,356}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.98.0>]
+    messages: []
+    links: [<0.99.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 800
+  neighbours:
+2018-01-04 21:14:54 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"39.106.41.102",3306,"root","20157411.adj","db",#Fun<mod_kernel.0.60528289>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,66}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-04 21:26:31 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"39.106.41.102",3306,"root","20157411.adj","db",#Fun<mod_kernel.0.60528289>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,66}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-01-04 21:44:48 =CRASH REPORT====
+  crasher:
+    initial call: mod_kernel:init/1
+    pid: <0.94.0>
+    registered_name: []
+    exception exit: {{undef,[{mysql,start_link,[db,"39.106.41.102",3306,"root","20157411.adj","db",#Fun<mod_kernel.0.60528289>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,66}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [gb_sup,<0.92.0>]
+    messages: []
+    links: [<0.93.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 164
+  neighbours:

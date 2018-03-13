@@ -1,0 +1,561 @@
+2017-12-25 19:54:31.972 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-25 19:54:31.982 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-25 19:54:50.709 [info] <0.65.0>@test:test:5 test info
+2017-12-25 19:54:50.709 [error] <0.65.0>@test:test:6 test error
+2017-12-30 16:47:55.003 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 16:47:55.012 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 16:48:01.805 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len: 5120
+2017-12-30 16:49:34.482 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 16:49:34.491 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 16:49:38.582 [error] <0.108.0>@gb_reader:login_parse_packet:60 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_list(5120) in gb_reader:login_parse_packet/2 line 60
+2017-12-30 16:49:38.583 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2017-12-30 16:50:49.425 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 16:50:49.432 [error] <0.97.0> CRASH REPORT Process <0.97.0> with 0 neighbours exited with reason: {cannot_listen,eaddrinuse} in gen_server:init_it/6 line 344
+2017-12-30 16:50:49.433 [error] <0.95.0> Supervisor {<0.95.0>,gb_tcp_listener_sup} had child gb_tcp_listener started with gb_tcp_listener:start_link(10, 6666) at undefined exit with reason {cannot_listen,eaddrinuse} in context start_error
+2017-12-30 16:50:49.433 [error] <0.91.0>@gb_network:start_tcp:52 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{shutdown,{failed_to_start_child,gb_tcp_listener,{cannot_listen,eaddrinuse}}},{child,undefined,gb_tcp_listener_sup,{gb_tcp_listener_sup,start_link,[6666]},transient,infinity,supervisor,[tcp_listener_sup]}}} in gb_network:start_tcp/1 line 52 in application_master:init/4 line 134
+2017-12-30 16:50:49.433 [info] <0.31.0>@gb_network:start_tcp:52 Application gb_server exited with reason: no match of right hand value {error,{{shutdown,{failed_to_start_child,gb_tcp_listener,{cannot_listen,eaddrinuse}}},{child,undefined,gb_tcp_listener_sup,{gb_tcp_listener_sup,start_link,[6666]},transient,infinity,supervisor,[tcp_listener_sup]}}} in gb_network:start_tcp/1 line 52
+2017-12-30 16:51:32.614 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 16:51:32.621 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 16:51:35.887 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len: [20,0]
+2017-12-30 16:54:54.393 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 16:54:54.402 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 16:54:56.884 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len: 20
+2017-12-30 17:05:27.599 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 17:05:27.607 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 17:05:35.567 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len: 5120
+2017-12-30 17:10:04.679 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 17:10:04.688 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 17:10:07.925 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len: [20,0]
+2017-12-30 17:20:10.729 [info] <0.109.0>@gb_reader:login_parse_packet:60 Len: [20,0]
+2017-12-30 17:21:56.165 [info] <0.110.0>@gb_reader:login_parse_packet:60 Len: [0,0]
+2017-12-30 17:26:21.073 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 17:26:21.082 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 17:26:33.004 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len: 5120
+2017-12-30 17:27:35.105 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 17:27:35.118 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 17:27:38.106 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len: 20
+2017-12-30 17:34:47.936 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 17:34:47.945 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 17:34:53.193 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len: 20
+2017-12-30 17:34:53.193 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[17,39,0,0,12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 17:42:47.324 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 17:42:47.334 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 17:42:55.585 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 17:42:55.585 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 17:57:11.416 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 17:57:11.425 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 17:57:18.345 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 17:57:18.345 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 17:57:18.348 [info] <0.108.0>@gb_reader:login_parse_packet:73 other!!!!
+2017-12-30 17:58:56.945 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 17:58:56.954 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 17:59:04.531 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 17:59:04.531 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 17:59:04.534 [info] <0.108.0>@pt_10:read:19 Accname, Password: {[0,0,10,5,97,103,108,97,98,18,3,49],[]}
+2017-12-30 17:59:04.534 [info] <0.108.0>@gb_reader:login_parse_packet:71 login!!!!
+2017-12-30 18:01:54.440 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 18:01:54.449 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 18:02:02.794 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 18:02:02.794 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 18:02:02.798 [info] <0.108.0>@pt:read_string:21 Len: 12
+2017-12-30 18:02:02.798 [info] <0.108.0>@pt_10:read:19 Accname, Password: {[0,0,10,5,97,103,108,97,98,18,3,49],[]}
+2017-12-30 18:02:02.798 [info] <0.108.0>@gb_reader:login_parse_packet:71 login!!!!
+2017-12-30 18:22:52.899 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 18:22:52.908 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 18:23:30.430 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 18:23:30.430 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 18:23:30.435 [error] <0.108.0>@protobuffs:decode:225 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,5,97,103,108,97,98,18,3,49>>, 4, string) line 364 in protobuffs:decode/2 line 225
+2017-12-30 18:23:30.436 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2017-12-30 18:31:27.383 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 18:31:27.392 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 18:31:35.085 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 18:31:35.085 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 18:31:35.090 [error] <0.108.0>@player_pb:decode CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: call to undefined function player_pb:decode(<<12,0,0,0,10,5,97,103,108,97,98,18,3,49>>)
+2017-12-30 18:31:35.090 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason undef in context child_terminated
+2017-12-30 18:38:54.047 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 18:38:54.058 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 18:39:01.800 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 18:39:01.800 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 18:39:01.805 [error] <0.108.0>@protobuffs:decode:225 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,5,97,103,108,97,98,18,3,49>>, 4, string) line 364 in protobuffs:decode/2 line 225
+2017-12-30 18:39:01.805 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2017-12-30 18:45:46.536 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 18:45:46.544 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 18:45:55.009 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 18:45:55.009 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 18:45:55.013 [error] <0.108.0>@protobuffs:decode:225 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,5,97,103,108,97,98,18,3,49>>, 4, string) line 364 in protobuffs:decode/2 line 225
+2017-12-30 18:45:55.013 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2017-12-30 19:00:55.121 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 19:00:55.130 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 19:01:01.723 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:01:01.723 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 19:01:01.728 [error] <0.108.0>@lager:info CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: call to undefined function lager:info("protobuffs Bytes: ~p", [{<<12,0,0,0,10,5,97,103,108,97,98,18,3,49>>,string}])
+2017-12-30 19:01:01.728 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason undef in context child_terminated
+2017-12-30 19:04:28.329 [info] <0.31.0> Application lager started on node 'gb1@127.0.0.1'
+2017-12-30 19:04:28.337 [info] <0.31.0> Application gb_server started on node 'gb1@127.0.0.1'
+2017-12-30 19:04:33.653 [info] <0.114.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:04:33.653 [info] <0.114.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 19:04:33.658 [error] <0.114.0>@protobuffs:decode:226 CRASH REPORT Process <0.114.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,5,97,103,108,97,98,18,3,49>>, 4, string) line 365 in protobuffs:decode/2 line 226
+2017-12-30 19:04:33.658 [error] <0.100.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.114.0> exit with reason badarg in context child_terminated
+2017-12-30 19:07:07.099 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 19:07:07.108 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 19:07:11.374 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:07:11.374 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 19:07:11.381 [error] <0.108.0>@protobuffs:decode:227 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,5,97,103,108,97,98,18,3,49>>, 4, string) line 366 in protobuffs:decode/2 line 227
+2017-12-30 19:07:11.381 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2017-12-30 19:12:11.736 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 19:12:11.745 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 19:12:15.922 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:12:15.922 [info] <0.108.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 19:12:15.928 [error] <0.108.0>@protobuffs:decode:228 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,5,97,103,108,97,98,18,3,49>>, 4, string) line 367 in protobuffs:decode/2 line 228
+2017-12-30 19:12:15.928 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2017-12-30 19:16:47.853 [info] <0.109.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:16:47.853 [info] <0.109.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 19:16:47.854 [error] <0.109.0>@protobuffs:decode:228 CRASH REPORT Process <0.109.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,5,97,103,108,97,98,18,3,49>>, 4, string) line 367 in protobuffs:decode/2 line 228
+2017-12-30 19:16:47.854 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.109.0> exit with reason badarg in context child_terminated
+2017-12-30 19:18:35.002 [info] <0.110.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:18:35.002 [info] <0.110.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 19:18:35.003 [error] <0.110.0>@protobuffs:decode:228 CRASH REPORT Process <0.110.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,5,97,103,108,97,98,18,3,49>>, 4, string) line 367 in protobuffs:decode/2 line 228
+2017-12-30 19:18:35.003 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.110.0> exit with reason badarg in context child_terminated
+2017-12-30 19:20:51.424 [info] <0.111.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:20:51.424 [info] <0.111.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 19:20:51.424 [error] <0.111.0>@protobuffs:decode:228 CRASH REPORT Process <0.111.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,5,97,103,108,97,98,18,3,49>>, 4, string) line 367 in protobuffs:decode/2 line 228
+2017-12-30 19:20:51.425 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.111.0> exit with reason badarg in context child_terminated
+2017-12-30 19:24:28.440 [info] <0.112.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:24:28.440 [info] <0.112.0>@gb_reader:login_parse_packet:67 Binary:[12,0,0,0,10,5,97,103,108,97,98,18,3,49]
+2017-12-30 19:24:28.441 [error] <0.112.0>@protobuffs:decode:228 CRASH REPORT Process <0.112.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,5,97,103,108,97,98,18,3,49>>, 4, string) line 367 in protobuffs:decode/2 line 228
+2017-12-30 19:24:28.441 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.112.0> exit with reason badarg in context child_terminated
+2017-12-30 19:33:16.661 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 19:33:16.671 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 19:33:23.709 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:35:52.938 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 19:35:52.945 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 19:35:56.708 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:39:26.022 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 19:39:26.033 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 19:39:38.410 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:41:33.616 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 19:41:33.626 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 19:41:40.459 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:42:32.209 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 19:42:32.218 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 19:42:39.340 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:42:39.340 [info] <0.108.0>@gb_reader:login_parse_packet:67 Len1, Binary:{<<12,0,0,0,10,5,97,103,108,97,98,18,3,49>>}
+2017-12-30 19:47:26.358 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 19:47:26.375 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 19:47:33.230 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:47:33.230 [info] <0.108.0>@gb_reader:login_parse_packet:67 Len1, Binary:{12,<<10,5,97,103,108,97,98,18,3,49>>}
+2017-12-30 19:48:34.127 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 19:48:34.139 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 19:48:38.080 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:48:38.080 [info] <0.108.0>@gb_reader:login_parse_packet:67 Len1, Binary:{12,<<10,5,97,103,108,97,98,18,3,49>>}
+2017-12-30 19:48:38.085 [error] <0.108.0>@protobuffs:decode_value:330 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in call to erlang:split_binary(<<"1">>, 3) in protobuffs:decode_value/3 line 330
+2017-12-30 19:48:38.085 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2017-12-30 19:57:33.706 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 19:57:33.716 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 19:57:42.081 [info] <0.108.0>@gb_reader:login_parse_packet:60 Len, Cmd: {20,10001}
+2017-12-30 19:57:42.081 [info] <0.108.0>@gb_reader:login_parse_packet:67 Len1, Binary:{12,<<10,5,97,103,108,97,98,18,3,49>>}
+2017-12-30 19:57:42.086 [error] <0.108.0>@protobuffs:decode_value:330 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in call to erlang:split_binary(<<"1">>, 3) in protobuffs:decode_value/3 line 330
+2017-12-30 19:57:42.087 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2017-12-30 20:26:11.416 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 20:26:11.423 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 20:26:14.744 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 20:26:14.746 [error] <0.108.0>@pt_10:encode CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: call to undefined function pt_10:encode({c2s_login_request,"hello world","world"})
+2017-12-30 20:26:14.747 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason undef in context child_terminated
+2017-12-30 20:27:57.397 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 20:27:57.404 [error] <0.97.0> CRASH REPORT Process <0.97.0> with 0 neighbours exited with reason: {cannot_listen,eaddrinuse} in gen_server:init_it/6 line 344
+2017-12-30 20:27:57.404 [error] <0.95.0> Supervisor {<0.95.0>,gb_tcp_listener_sup} had child gb_tcp_listener started with gb_tcp_listener:start_link(10, 6666) at undefined exit with reason {cannot_listen,eaddrinuse} in context start_error
+2017-12-30 20:27:57.404 [error] <0.91.0>@gb_network:start_tcp:52 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{shutdown,{failed_to_start_child,gb_tcp_listener,{cannot_listen,eaddrinuse}}},{child,undefined,gb_tcp_listener_sup,{gb_tcp_listener_sup,start_link,[6666]},transient,infinity,supervisor,[tcp_listener_sup]}}} in gb_network:start_tcp/1 line 52 in application_master:init/4 line 134
+2017-12-30 20:29:23.464 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 20:29:23.472 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 20:29:27.884 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 20:29:27.890 [error] <0.108.0>@player_pb:iolist CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: call to undefined function player_pb:iolist(c2s_login_request, {c2s_login_request,"hello world","world"})
+2017-12-30 20:29:27.890 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason undef in context child_terminated
+2017-12-30 20:39:38.456 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 20:39:38.466 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 20:39:42.784 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 20:45:15.274 [info] <0.109.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 20:46:24.086 [info] <0.110.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 20:47:50.937 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 20:47:50.944 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 20:47:59.502 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 20:47:59.507 [info] <0.108.0>@gb_reader:login_parse_packet:66 Pkt: [[["\n","\v",<<"hello world">>],[[18],[5],<<"world">>]]]
+2017-12-30 20:51:49.855 [info] <0.109.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 20:51:49.855 [info] <0.109.0>@gb_reader:login_parse_packet:66 Pkt: [[["\n","\v",<<"hello world">>],[[18],[5],<<"world">>]]]
+2017-12-30 20:59:51.759 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 20:59:51.766 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 20:59:54.876 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 20:59:54.879 [info] <0.108.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2017-12-30 21:02:54.266 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 21:02:54.275 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 21:03:00.540 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 21:03:00.543 [info] <0.108.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2017-12-30 21:03:00.544 [error] <0.108.0>@player_pb:decode_s2c_login_request CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: call to undefined function player_pb:decode_s2c_login_request(<<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>)
+2017-12-30 21:03:00.544 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason undef in context child_terminated
+2017-12-30 21:04:11.101 [info] <0.31.0> Application lager started on node nonode@nohost
+2017-12-30 21:04:11.109 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2017-12-30 21:04:12.495 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 21:04:12.498 [info] <0.108.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2017-12-30 21:04:12.498 [info] <0.108.0>@gb_reader:login_parse_packet:68 S: {c2s_login_request,"hello world","world"}
+2017-12-30 21:15:12.591 [info] <0.109.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 21:15:12.591 [info] <0.109.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2017-12-30 21:15:12.591 [info] <0.109.0>@gb_reader:login_parse_packet:68 S: {c2s_login_request,"hello world","world"}
+2017-12-30 21:19:03.653 [info] <0.110.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 21:19:03.653 [info] <0.110.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2017-12-30 21:19:03.653 [info] <0.110.0>@gb_reader:login_parse_packet:68 S: {c2s_login_request,"hello world","world"}
+2017-12-30 21:19:21.590 [info] <0.111.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 21:19:21.590 [info] <0.111.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2017-12-30 21:19:21.590 [info] <0.111.0>@gb_reader:login_parse_packet:68 S: {c2s_login_request,"hello world","world"}
+2017-12-30 21:20:20.533 [info] <0.112.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2017-12-30 21:20:20.533 [info] <0.112.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2017-12-30 21:20:20.533 [info] <0.112.0>@gb_reader:login_parse_packet:68 S: {c2s_login_request,"hello world","world"}
+2018-01-01 18:19:03.630 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 18:19:03.639 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 18:20:53.539 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 18:20:53.542 [info] <0.108.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 18:20:53.542 [info] <0.108.0>@gb_reader:login_parse_packet:68 S: {c2s_login_request,"hello world","world"}
+2018-01-01 18:26:43.119 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 18:26:43.127 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 18:26:48.035 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 18:26:48.039 [info] <0.108.0>@gb_reader:login_parse_packet:67 PktList: [1,[["\n","\v",<<"hello world">>],[[18],[5],<<"world">>]]]
+2018-01-01 18:26:48.039 [info] <0.108.0>@gb_reader:login_parse_packet:68 Pkt: <<1,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 18:26:48.040 [error] <0.108.0> CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: {error,"Error decoding type"} in protobuffs:read_field_num_and_wire_type/1 line 212
+2018-01-01 18:26:48.040 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason {error,"Error decoding type"} in context child_terminated
+2018-01-01 18:37:49.262 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 18:37:49.269 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 18:42:08.358 [info] <0.110.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 18:42:08.361 [info] <0.110.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 18:42:08.361 [error] <0.110.0>@gb_reader:login_parse_packet:67 CRASH REPORT Process <0.110.0> with 0 neighbours crashed with reason: bad argument in call to erlang:length(<<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>) in gb_reader:login_parse_packet/2 line 67
+2018-01-01 18:42:08.361 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.110.0> exit with reason badarg in context child_terminated
+2018-01-01 18:44:16.341 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 18:44:16.349 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 18:44:19.442 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 18:44:19.445 [info] <0.108.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 18:44:19.445 [error] <0.108.0>@gb_reader:login_parse_packet:67 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in call to erlang:list_to_binary(20) in gb_reader:login_parse_packet/2 line 67
+2018-01-01 18:44:19.445 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2018-01-01 18:47:10.904 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 18:47:10.911 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 18:47:14.832 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 18:47:14.836 [info] <0.108.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 18:47:14.836 [error] <0.108.0>@gb_reader:login_parse_packet:68 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: no match of right hand value <<20>> in gb_reader:login_parse_packet/2 line 68
+2018-01-01 18:47:14.837 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason {badmatch,<<20>>} in context child_terminated
+2018-01-01 18:54:06.152 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 18:54:06.160 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 18:54:20.636 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 18:54:20.639 [info] <0.108.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 18:54:20.640 [error] <0.108.0>@erlang:atom_to_binary CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: call to undefined function erlang:atom_to_binary(20)
+2018-01-01 18:54:20.640 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason undef in context child_terminated
+2018-01-01 18:58:41.796 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 18:58:41.803 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 18:58:47.765 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 18:58:47.768 [info] <0.108.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 18:58:47.768 [info] <0.108.0>@gb_reader:login_parse_packet:69 Len: 20
+2018-01-01 18:58:47.768 [error] <0.108.0>@gb_reader:login_parse_packet:70 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in gb_reader:login_parse_packet/2 line 70
+2018-01-01 18:58:47.768 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2018-01-01 19:39:13.842 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 19:39:13.850 [error] <0.97.0> CRASH REPORT Process <0.97.0> with 0 neighbours exited with reason: {cannot_listen,eaddrinuse} in gen_server:init_it/6 line 344
+2018-01-01 19:39:13.850 [error] <0.95.0> Supervisor {<0.95.0>,gb_tcp_listener_sup} had child gb_tcp_listener started with gb_tcp_listener:start_link(10, 6666) at undefined exit with reason {cannot_listen,eaddrinuse} in context start_error
+2018-01-01 19:39:13.851 [error] <0.91.0>@gb_network:start_tcp:52 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{shutdown,{failed_to_start_child,gb_tcp_listener,{cannot_listen,eaddrinuse}}},{child,undefined,gb_tcp_listener_sup,{gb_tcp_listener_sup,start_link,[6666]},transient,infinity,supervisor,[tcp_listener_sup]}}} in gb_network:start_tcp/1 line 52 in application_master:init/4 line 134
+2018-01-01 19:39:36.157 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 19:39:36.166 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 19:40:08.254 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 19:40:08.257 [info] <0.108.0>@gb_reader:login_parse_packet:66 Pkt: <<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 19:40:08.257 [info] <0.108.0>@gb_reader:login_parse_packet:69 Len: 20
+2018-01-01 19:40:08.257 [info] <0.108.0>@gb_reader:login_parse_packet:70 Len1: 20
+2018-01-01 19:43:39.426 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 19:43:39.435 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 19:44:04.228 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 19:44:04.231 [info] <0.108.0>@gb_reader:login_parse_packet:67 NewPkt: <<20,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 19:54:00.595 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 19:54:00.603 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 19:54:04.418 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 19:54:04.421 [info] <0.108.0>@gb_reader:login_parse_packet:69 len:<<0,20>>
+2018-01-01 19:54:04.422 [info] <0.108.0>@gb_reader:login_parse_packet:70 NewPkt: <<20,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 19:57:53.069 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 19:57:53.079 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 19:58:04.944 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 19:58:04.949 [error] <0.108.0>@gb_reader:login_parse_packet:69 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in gb_reader:login_parse_packet/2 line 69
+2018-01-01 19:58:04.949 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2018-01-01 19:59:12.193 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 19:59:12.202 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 19:59:14.992 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 19:59:14.995 [info] <0.108.0>@gb_reader:login_parse_packet:71 NewPkt: <<0,20,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:00:36.941 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 20:00:36.950 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 20:00:39.816 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:00:39.819 [info] <0.108.0>@gb_reader:login_parse_packet:71 NewPkt: <<2,130,218,25,91,27,27,200,29,219,220,155,25,4,129,93,219,220,155,25,0:2>>
+2018-01-01 20:00:39.819 [error] emulator Bad value on output port 'tcp_inet'
+
+2018-01-01 20:00:39.819 [error] <0.108.0>@gb_reader:login_parse_packet:79 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: no match of right hand value {error,einval} in gb_reader:login_parse_packet/2 line 79
+2018-01-01 20:00:39.819 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason {badmatch,{error,einval}} in context child_terminated
+2018-01-01 20:04:04.299 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 20:04:04.308 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 20:04:07.250 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:04:07.253 [info] <0.108.0>@gb_reader:login_parse_packet:71 NewPkt: <<20,0,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:06:43.770 [info] <0.109.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:06:43.770 [info] <0.109.0>@gb_reader:login_parse_packet:71 NewPkt: <<20,0,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:09:01.296 [info] <0.110.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:09:01.296 [info] <0.110.0>@gb_reader:login_parse_packet:71 NewPkt: <<20,0,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:11:34.762 [info] <0.111.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:11:34.762 [info] <0.111.0>@gb_reader:login_parse_packet:71 NewPkt: <<20,0,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:14:42.187 [info] <0.112.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:14:42.187 [info] <0.112.0>@gb_reader:login_parse_packet:71 NewPkt: <<20,0,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:30:37.038 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 20:30:37.048 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 20:30:55.214 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:30:55.219 [info] <0.108.0>@gb_reader:login_parse_packet:72 NewPkt: <<0,24,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:32:02.062 [info] <0.109.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:32:02.062 [info] <0.109.0>@gb_reader:login_parse_packet:72 NewPkt: <<0,24,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:33:06.238 [info] <0.110.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:33:06.238 [info] <0.110.0>@gb_reader:login_parse_packet:72 NewPkt: <<0,24,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:34:48.234 [info] <0.111.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:34:48.234 [info] <0.111.0>@gb_reader:login_parse_packet:72 NewPkt: <<0,24,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:37:03.357 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 20:37:03.366 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 20:37:16.815 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:37:16.820 [info] <0.108.0>@gb_reader:login_parse_packet:72 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:39:22.103 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 20:39:22.112 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 20:39:25.290 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:39:25.294 [info] <0.108.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 20:39:25.294 [info] <0.108.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:43:43.513 [info] <0.109.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:43:43.513 [info] <0.109.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 20:43:43.513 [info] <0.109.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:45:31.963 [info] <0.110.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:45:31.963 [info] <0.110.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 20:45:31.963 [info] <0.110.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:46:22.585 [info] <0.111.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:46:22.585 [info] <0.111.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 20:46:22.585 [info] <0.111.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:48:25.851 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 20:48:25.858 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 20:48:32.276 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:48:32.281 [info] <0.108.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 20:48:32.281 [info] <0.108.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:51:07.978 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 20:51:07.987 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 20:51:14.950 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:51:14.955 [info] <0.108.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 20:51:14.955 [info] <0.108.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 20:57:17.162 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 20:57:17.170 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 20:57:35.345 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 20:57:35.351 [info] <0.108.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 20:57:35.351 [info] <0.108.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 21:00:22.953 [info] <0.109.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 21:00:22.953 [info] <0.109.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 21:00:22.953 [info] <0.109.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 21:00:46.643 [info] <0.110.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 21:00:46.643 [info] <0.110.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 21:00:46.643 [info] <0.110.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 21:01:28.880 [info] <0.111.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 21:01:28.880 [info] <0.111.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 21:01:28.880 [info] <0.111.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 21:02:05.922 [info] <0.112.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 21:02:05.922 [info] <0.112.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 21:02:05.922 [info] <0.112.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 21:02:41.175 [info] <0.113.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 21:02:41.175 [info] <0.113.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 21:02:41.175 [info] <0.113.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 21:05:58.875 [info] <0.114.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 21:05:58.875 [info] <0.114.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 21:05:58.875 [info] <0.114.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 21:09:35.345 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 21:09:35.352 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 21:09:44.684 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 21:09:44.688 [info] <0.108.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 21:09:44.689 [info] <0.108.0>@gb_reader:login_parse_packet:73 NewPkt: <<0,24,0,0,39,17,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-01 21:10:58.649 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-01 21:10:58.658 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-01 21:11:01.273 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-01 21:11:01.278 [info] <0.108.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-01 21:11:01.278 [info] <0.108.0>@gb_reader:login_parse_packet:73 NewPkt: <<24,0,17,39,0,0,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-02 14:36:43.913 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 14:36:43.927 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-02 14:36:57.882 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-02 14:36:57.886 [info] <0.108.0>@gb_reader:login_parse_packet:70 Id:10001
+2018-01-02 14:36:57.886 [info] <0.108.0>@gb_reader:login_parse_packet:73 NewPkt: <<24,0,17,39,0,0,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-02 14:44:47.827 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 14:44:47.834 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-02 14:44:54.019 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {20,10001}
+2018-01-02 14:44:54.019 [info] <0.108.0>@gb_reader:login_parse_packet:87 Len1, Binary:<<12,0,0,0,10,5,97,103,108,97,98,18,3,49>>
+2018-01-02 14:44:54.024 [error] <0.108.0>@protobuffs:decode:225 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,5,97,103,108,97,98,18,3,49>>, 4, string) line 364 in protobuffs:decode/2 line 225
+2018-01-02 14:44:54.025 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2018-01-02 14:52:26.536 [info] <0.109.0>@gb_reader:login_parse_packet:61 Len, Cmd: {28,10001}
+2018-01-02 14:52:26.536 [info] <0.109.0>@gb_reader:login_parse_packet:87 Len1, Binary:<<20,0,0,0,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,104,101,108>>
+2018-01-02 14:52:26.536 [error] <0.109.0>@protobuffs:decode:225 CRASH REPORT Process <0.109.0> with 0 neighbours crashed with reason: bad argument in call to protobuffs:decode_value(<<0,0,0,10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,104,101,108>>, 4, string) line 364 in protobuffs:decode/2 line 225
+2018-01-02 14:52:26.536 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.109.0> exit with reason badarg in context child_terminated
+2018-01-02 14:55:04.289 [info] <0.110.0>@gb_reader:login_parse_packet:61 Len, Cmd: {24,10001}
+2018-01-02 14:55:04.289 [info] <0.110.0>@gb_reader:login_parse_packet:87 Len1, Binary:<<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,104,101,108>>
+2018-01-02 14:55:04.289 [error] <0.110.0>@protobuffs:decode_value:330 CRASH REPORT Process <0.110.0> with 0 neighbours crashed with reason: bad argument in call to erlang:split_binary(<<"hel">>, 5) in protobuffs:decode_value/3 line 330
+2018-01-02 14:55:04.289 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.110.0> exit with reason badarg in context child_terminated
+2018-01-02 14:56:39.240 [info] <0.111.0>@gb_reader:login_parse_packet:61 Len, Cmd: {24,10001}
+2018-01-02 14:56:39.240 [info] <0.111.0>@gb_reader:login_parse_packet:87 Len1, Binary:<<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114>>
+2018-01-02 14:56:39.240 [error] <0.111.0>@protobuffs:decode_value:330 CRASH REPORT Process <0.111.0> with 0 neighbours crashed with reason: bad argument in call to erlang:split_binary(<<"wor">>, 5) in protobuffs:decode_value/3 line 330
+2018-01-02 14:56:39.240 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.111.0> exit with reason badarg in context child_terminated
+2018-01-02 14:59:39.711 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 14:59:39.720 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-02 14:59:53.960 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len, Cmd: {24,10001}
+2018-01-02 15:03:05.768 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 15:03:05.778 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-02 15:03:11.299 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len: 24
+2018-01-02 15:04:21.392 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 15:04:21.401 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-02 15:04:27.672 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len: 24
+2018-01-02 15:04:27.672 [info] <0.108.0>@gb_reader:login_parse_packet:86 Cmd:10001
+2018-01-02 15:04:27.673 [info] <0.108.0>@gb_reader:login_parse_packet:87 Binary:<<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-02 15:04:27.677 [info] <0.108.0>@pt_10:read:18 Msg:{c2s_login_request,"hello world","world"}
+2018-01-02 15:04:27.677 [info] <0.108.0>@gb_reader:login_parse_packet:91 login!!!!
+2018-01-02 15:23:39.731 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 15:23:39.740 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-02 15:26:45.126 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len: 24
+2018-01-02 15:26:45.132 [error] <0.108.0>@pt_10:encode:115 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in pt_10:encode/2 line 115
+2018-01-02 15:26:45.132 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2018-01-02 15:27:20.403 [info] <0.109.0>@gb_reader:login_parse_packet:61 Len: 24
+2018-01-02 15:27:20.403 [error] <0.109.0>@pt_10:encode:115 CRASH REPORT Process <0.109.0> with 0 neighbours crashed with reason: bad argument in pt_10:encode/2 line 115
+2018-01-02 15:27:20.403 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.109.0> exit with reason badarg in context child_terminated
+2018-01-02 15:29:27.675 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 15:29:27.685 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-02 15:29:38.163 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len: 24
+2018-01-02 15:29:38.171 [info] <0.108.0>@pt_10:encode:115 Id:undefined
+2018-01-02 15:29:38.172 [error] <0.108.0>@pt_10:encode:116 CRASH REPORT Process <0.108.0> with 0 neighbours crashed with reason: bad argument in pt_10:encode/2 line 116
+2018-01-02 15:29:38.172 [error] <0.94.0> Supervisor gb_tcp_client_sup had child gb_reader started with {gb_reader,start_link,undefined} at <0.108.0> exit with reason badarg in context child_terminated
+2018-01-02 15:34:50.975 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 15:34:50.984 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-02 15:35:03.481 [info] <0.108.0>@gb_reader:login_parse_packet:61 Len: 24
+2018-01-02 15:35:03.488 [info] <0.108.0>@pt_10:encode_1:123 Id:10001
+2018-01-02 15:41:49.136 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 15:41:49.146 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-02 15:44:21.311 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 15:44:21.324 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-02 15:45:00.335 [info] <0.318.0>@gb_reader:login_parse_packet:61 Len: 24
+2018-01-02 15:45:00.335 [info] <0.318.0>@gb_reader:login_parse_packet:67 Cmd:10001
+2018-01-02 15:45:00.335 [info] <0.318.0>@gb_reader:login_parse_packet:68 Binary:<<10,11,104,101,108,108,111,32,119,111,114,108,100,18,5,119,111,114,108,100>>
+2018-01-02 15:45:00.342 [info] <0.318.0>@pt_10:read:18 Msg:{c2s_login_request,"hello world","world"}
+2018-01-02 15:45:00.342 [info] <0.318.0>@gb_reader:login_parse_packet:72 login!!!!
+2018-01-02 19:46:03.055 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 19:50:45.644 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 19:50:45.650 [error] <0.94.0>@mysql:start_link CRASH REPORT Process <0.94.0> with 0 neighbours exited with reason: call to undefined function mysql:start_link(db, "localhost", 3306, "root", "184514", "gb_mysql_conn", #Fun<mod_kernel.0.13706730>, utf8) in gen_server:init_it/6 line 352
+2018-01-02 19:50:45.650 [error] <0.91.0>@gb_network:start_kernel:22 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{undef,[{mysql,start_link,[db,"localhost",3306,"root","184514","gb_mysql_conn",#Fun<mod_kernel.0.13706730>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,mod_kernel,{mod_kernel,start_link,[]},permanent,10000,supervisor,[mod_kernel]}}} in gb_network:start_kernel/0 line 22 in application_master:init/4 line 134
+2018-01-02 19:53:15.371 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 19:53:15.378 [error] <0.94.0>@mysql:start_link CRASH REPORT Process <0.94.0> with 0 neighbours exited with reason: call to undefined function mysql:start_link(db, "localhost", 3306, "root", "184514", "gb_mysql_conn", #Fun<mod_kernel.0.13706730>, utf8) in gen_server:init_it/6 line 352
+2018-01-02 19:53:15.378 [error] <0.91.0>@gb_network:start_kernel:22 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{undef,[{mysql,start_link,[db,"localhost",3306,"root","184514","gb_mysql_conn",#Fun<mod_kernel.0.13706730>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,mod_kernel,{mod_kernel,start_link,[]},permanent,10000,supervisor,[mod_kernel]}}} in gb_network:start_kernel/0 line 22 in application_master:init/4 line 134
+2018-01-02 19:55:08.951 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 19:55:08.957 [error] <0.94.0>@mysql:start_link CRASH REPORT Process <0.94.0> with 0 neighbours exited with reason: call to undefined function mysql:start_link(db, "localhost", 3306, "root", "184514", "gb_center", #Fun<mod_kernel.0.26305797>, utf8) in gen_server:init_it/6 line 352
+2018-01-02 19:55:08.957 [error] <0.91.0>@gb_network:start_kernel:22 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{undef,[{mysql,start_link,[db,"localhost",3306,"root","184514","gb_center",#Fun<mod_kernel.0.26305797>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,63}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,mod_kernel,{mod_kernel,start_link,[]},permanent,10000,supervisor,[mod_kernel]}}} in gb_network:start_kernel/0 line 22 in application_master:init/4 line 134
+2018-01-02 19:58:14.881 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 19:58:14.888 [error] <0.94.0>@mysql:start_link CRASH REPORT Process <0.94.0> with 0 neighbours exited with reason: call to undefined function mysql:start_link(db, "localhost", 3306, "root", [], "gb_center", #Fun<mod_kernel.0.65060746>, utf8) in gen_server:init_it/6 line 352
+2018-01-02 20:00:15.548 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 20:01:17.547 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 20:01:49.874 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 20:13:36.004 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 20:19:00.580 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 20:19:00.598 [info] <0.31.0> Application crypto started on node nonode@nohost
+2018-01-02 20:19:00.616 [error] emulator Error in process <0.98.0> with exit value:
+{badarg,[{erlang,iolist_to_binary,[184514],[]},{crypto,hash,2,[{file,"crypto.erl"},{line,225}]},{mysql_auth,password_new,2,[{file,"src/mysql_auth.erl"},{line,195}]},{mysql_auth,do_new_auth,9,[{file,"src/mysql_auth.erl"},{line,79}]},{mysql_conn,mysql_init,6,[{file,"src/mysql_conn.erl"},{line,622}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,347}]}]}
+2018-01-02 20:19:05.601 [error] emulator Error in process <0.103.0> with exit value:
+{badarg,[{erlang,iolist_to_binary,[184514],[]},{crypto,hash,2,[{file,"crypto.erl"},{line,225}]},{mysql_auth,password_new,2,[{file,"src/mysql_auth.erl"},{line,195}]},{mysql_auth,do_new_auth,9,[{file,"src/mysql_auth.erl"},{line,79}]},{mysql_conn,mysql_init,6,[{file,"src/mysql_conn.erl"},{line,622}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,347}]}]}
+2018-01-02 20:19:05.602 [error] emulator Error in process <0.104.0> with exit value:
+{badarg,[{erlang,iolist_to_binary,[184514],[]},{crypto,hash,2,[{file,"crypto.erl"},{line,225}]},{mysql_auth,password_new,2,[{file,"src/mysql_auth.erl"},{line,195}]},{mysql_auth,do_new_auth,9,[{file,"src/mysql_auth.erl"},{line,79}]},{mysql_conn,mysql_init,6,[{file,"src/mysql_conn.erl"},{line,622}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,347}]}]}
+2018-01-02 20:19:05.602 [error] <0.91.0>@gb_network:start_kernel:22 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{badarg,[{erlang,iolist_to_binary,[184514],[]},{crypto,hash,2,[{file,"crypto.erl"},{line,225}]},{mysql_auth,password_new,2,[{file,"src/mysql_auth.erl"},{line,195}]},{mysql_auth,do_new_auth,9,[{file,"src/mysql_auth.erl"},{line,79}]},{mysql_conn,mysql_init,6,[{file,"src/mysql_conn.erl"},{line,622}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,347}]}]},{child,undefined,mod_kernel,{mod_kernel,start_link,[]},permanent,10000,supervisor,[mod_kernel]}}} in gb_network:start_kernel/0 line 22 in application_master:init/4 line 134
+2018-01-02 20:20:04.620 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 20:20:04.637 [info] <0.31.0> Application crypto started on node nonode@nohost
+2018-01-02 20:20:04.649 [error] emulator Error in process <0.98.0> with exit value:
+{badarg,[{erlang,iolist_to_binary,[184514],[]},{crypto,hash,2,[{file,"crypto.erl"},{line,225}]},{mysql_auth,password_new,2,[{file,"src/mysql_auth.erl"},{line,195}]},{mysql_auth,do_new_auth,9,[{file,"src/mysql_auth.erl"},{line,79}]},{mysql_conn,mysql_init,6,[{file,"src/mysql_conn.erl"},{line,622}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,347}]}]}
+2018-01-02 20:20:09.641 [error] emulator Error in process <0.104.0> with exit value:
+{badarg,[{erlang,iolist_to_binary,[184514],[]},{crypto,hash,2,[{file,"crypto.erl"},{line,225}]},{mysql_auth,password_new,2,[{file,"src/mysql_auth.erl"},{line,195}]},{mysql_auth,do_new_auth,9,[{file,"src/mysql_auth.erl"},{line,79}]},{mysql_conn,mysql_init,6,[{file,"src/mysql_conn.erl"},{line,622}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,347}]}]}
+2018-01-02 20:20:09.642 [error] emulator Error in process <0.103.0> with exit value:
+{badarg,[{erlang,iolist_to_binary,[184514],[]},{crypto,hash,2,[{file,"crypto.erl"},{line,225}]},{mysql_auth,password_new,2,[{file,"src/mysql_auth.erl"},{line,195}]},{mysql_auth,do_new_auth,9,[{file,"src/mysql_auth.erl"},{line,79}]},{mysql_conn,mysql_init,6,[{file,"src/mysql_conn.erl"},{line,622}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,347}]}]}
+2018-01-02 20:51:06.435 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 20:51:59.447 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-02 20:52:28.422 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-03 19:00:54.987 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-03 19:00:54.991 [error] <0.91.0>@gb_network:start:13 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: bad arithmetic expression in gb_network:start/1 line 13 in application_master:init/4 line 134
+2018-01-03 19:00:54.991 [info] <0.31.0>@gb_network:start:13 Application gb_server exited with reason: bad arithmetic expression in gb_network:start/1 line 13
+2018-01-03 19:02:04.515 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-03 19:02:04.524 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-03 19:04:04.251 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-03 19:04:04.268 [info] <0.31.0> Application crypto started on node nonode@nohost
+2018-01-03 19:04:04.270 [error] emulator Error in process <0.98.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.98.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-03 19:04:09.272 [error] emulator Error in process <0.100.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.100.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-03 19:04:09.304 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-03 19:04:14.271 [error] emulator Error in process <0.115.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.115.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-03 19:04:19.272 [error] emulator Error in process <0.116.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.116.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-03 19:04:24.273 [error] emulator Error in process <0.117.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.117.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-03 19:04:29.274 [error] emulator Error in process <0.118.0> with exit value:
+{function_clause,[{mysql_recv,start_link,["localhost","3306",#Fun<mod_kernel.0.17981621>,<0.118.0>],[{file,"src/mysql_recv.erl"},{line,73}]},{mysql_conn,init,10,[{file,"src/mysql_conn.erl"},{line,345}]}]}
+2018-01-03 20:04:44.243 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-03 20:04:44.259 [info] <0.31.0> Application crypto started on node nonode@nohost
+2018-01-03 20:04:44.262 [info] <0.31.0> Application emysql started on node nonode@nohost
+2018-01-03 20:04:44.266 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-03 21:10:26.335 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-03 21:10:26.370 [info] <0.31.0> Application crypto started on node nonode@nohost
+2018-01-03 21:10:26.377 [info] <0.31.0> Application emysql started on node nonode@nohost
+2018-01-03 21:10:26.384 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-04 13:20:21.049 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 13:20:21.066 [info] <0.31.0> Application crypto started on node nonode@nohost
+2018-01-04 13:20:21.070 [info] <0.31.0> Application emysql started on node nonode@nohost
+2018-01-04 13:20:21.075 [error] <0.106.0> CRASH REPORT Process <0.106.0> with 0 neighbours exited with reason: {cannot_listen,eaddrinuse} in gen_server:init_it/6 line 344
+2018-01-04 13:20:21.075 [error] <0.104.0> Supervisor {<0.104.0>,gb_tcp_listener_sup} had child gb_tcp_listener started with gb_tcp_listener:start_link(10, 6666) at undefined exit with reason {cannot_listen,eaddrinuse} in context start_error
+2018-01-04 13:20:21.075 [error] <0.91.0>@gb_network:start_tcp:52 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{shutdown,{failed_to_start_child,gb_tcp_listener,{cannot_listen,eaddrinuse}}},{child,undefined,gb_tcp_listener_sup,{gb_tcp_listener_sup,start_link,[6666]},transient,infinity,supervisor,[tcp_listener_sup]}}} in gb_network:start_tcp/1 line 52 in application_master:init/4 line 134
+2018-01-04 13:20:50.535 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 13:20:50.552 [info] <0.31.0> Application crypto started on node nonode@nohost
+2018-01-04 13:20:50.556 [info] <0.31.0> Application emysql started on node nonode@nohost
+2018-01-04 13:20:50.560 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-04 13:33:44.022 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 13:33:44.038 [info] <0.31.0> Application crypto started on node nonode@nohost
+2018-01-04 13:33:44.042 [info] <0.31.0> Application emysql started on node nonode@nohost
+2018-01-04 13:33:44.160 [error] <0.94.0>@gen_server:init_it:356 CRASH REPORT Process mod_kernel with 0 neighbours exited with reason: bad return value: {failed_to_connect_to_database,econnrefused} in gen_server:init_it/6 line 356
+2018-01-04 13:33:44.161 [error] <0.91.0>@gb_network:start_kernel:22 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,{failed_to_connect_to_database,econnrefused}},{child,undefined,mod_kernel,{mod_kernel,start_link,[]},permanent,10000,supervisor,[mod_kernel]}}} in gb_network:start_kernel/0 line 22 in application_master:init/4 line 134
+2018-01-04 13:33:44.161 [info] <0.31.0>@gb_network:start_kernel:22 Application gb_server exited with reason: no match of right hand value {error,{{bad_return_value,{failed_to_connect_to_database,econnrefused}},{child,undefined,mod_kernel,{mod_kernel,start_link,[]},permanent,10000,supervisor,[mod_kernel]}}} in gb_network:start_kernel/0 line 22
+2018-01-04 13:35:31.469 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 13:35:31.485 [info] <0.31.0> Application crypto started on node nonode@nohost
+2018-01-04 13:35:31.488 [info] <0.31.0> Application emysql started on node nonode@nohost
+2018-01-04 13:35:31.608 [error] <0.94.0>@gen_server:init_it:356 CRASH REPORT Process mod_kernel with 0 neighbours exited with reason: bad return value: {failed_to_connect_to_database,econnrefused} in gen_server:init_it/6 line 356
+2018-01-04 13:35:31.609 [error] <0.91.0>@gb_network:start_kernel:22 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,{failed_to_connect_to_database,econnrefused}},{child,undefined,mod_kernel,{mod_kernel,start_link,[]},permanent,10000,supervisor,[mod_kernel]}}} in gb_network:start_kernel/0 line 22 in application_master:init/4 line 134
+2018-01-04 15:14:18.070 [info] <0.31.0> Application lager started on node 'gb1@127.0.0.1'
+2018-01-04 15:14:18.086 [info] <0.31.0> Application crypto started on node 'gb1@127.0.0.1'
+2018-01-04 15:14:18.091 [info] <0.31.0> Application emysql started on node 'gb1@127.0.0.1'
+2018-01-04 15:14:19.175 [error] <0.100.0>@gen_server:init_it:356 CRASH REPORT Process mod_kernel with 0 neighbours exited with reason: bad return value: {failed_to_connect_to_database,econnrefused} in gen_server:init_it/6 line 356
+2018-01-04 15:14:19.176 [error] <0.97.0>@gb_network:start_kernel:22 CRASH REPORT Process <0.97.0> with 0 neighbours exited with reason: no match of right hand value {error,{{bad_return_value,{failed_to_connect_to_database,econnrefused}},{child,undefined,mod_kernel,{mod_kernel,start_link,[]},permanent,10000,supervisor,[mod_kernel]}}} in gb_network:start_kernel/0 line 22 in application_master:init/4 line 134
+2018-01-04 15:14:49.799 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 15:14:49.815 [info] <0.31.0> Application crypto started on node nonode@nohost
+2018-01-04 15:14:49.819 [info] <0.31.0> Application emysql started on node nonode@nohost
+2018-01-04 15:14:49.824 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-04 19:26:50.205 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 19:26:50.225 [info] <0.31.0> Application crypto started on node nonode@nohost
+2018-01-04 19:26:50.229 [info] <0.31.0> Application emysql started on node nonode@nohost
+2018-01-04 19:26:50.234 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-04 21:14:54.089 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 21:14:54.096 [error] <0.94.0>@mysql:start_link CRASH REPORT Process <0.94.0> with 0 neighbours exited with reason: call to undefined function mysql:start_link(db, "39.106.41.102", 3306, "root", "20157411.adj", "db", #Fun<mod_kernel.0.60528289>, utf8) in gen_server:init_it/6 line 352
+2018-01-04 21:26:31.019 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 21:26:31.025 [error] <0.94.0>@mysql:start_link CRASH REPORT Process <0.94.0> with 0 neighbours exited with reason: call to undefined function mysql:start_link(db, "39.106.41.102", 3306, "root", "20157411.adj", "db", #Fun<mod_kernel.0.60528289>, utf8) in gen_server:init_it/6 line 352
+2018-01-04 21:26:31.025 [error] <0.91.0>@gb_network:start_kernel:22 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{undef,[{mysql,start_link,[db,"39.106.41.102",3306,"root","20157411.adj","db",#Fun<mod_kernel.0.60528289>,utf8],[]},{mod_kernel,init_mysql,0,[{file,"src/mod/mod_kernel.erl"},{line,66}]},{mod_kernel,init,1,[{file,"src/mod/mod_kernel.erl"},{line,41}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,mod_kernel,{mod_kernel,start_link,[]},permanent,10000,supervisor,[mod_kernel]}}} in gb_network:start_kernel/0 line 22 in application_master:init/4 line 134
+2018-01-04 21:44:48.271 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 21:45:18.536 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 21:45:18.545 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-04 21:45:30.753 [info] <0.31.0> Application mnesia started on node nonode@nohost
+2018-01-04 21:46:30.760 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 21:46:30.768 [error] <0.98.0> CRASH REPORT Process <0.98.0> with 0 neighbours exited with reason: {cannot_listen,eaddrinuse} in gen_server:init_it/6 line 344
+2018-01-04 21:46:30.768 [error] <0.96.0> Supervisor {<0.96.0>,gb_tcp_listener_sup} had child gb_tcp_listener started with gb_tcp_listener:start_link(10, 6666) at undefined exit with reason {cannot_listen,eaddrinuse} in context start_error
+2018-01-04 21:46:30.768 [error] <0.91.0>@gb_network:start_tcp:52 CRASH REPORT Process <0.91.0> with 0 neighbours exited with reason: no match of right hand value {error,{{shutdown,{failed_to_start_child,gb_tcp_listener,{cannot_listen,eaddrinuse}}},{child,undefined,gb_tcp_listener_sup,{gb_tcp_listener_sup,start_link,[6666]},transient,infinity,supervisor,[tcp_listener_sup]}}} in gb_network:start_tcp/1 line 52 in application_master:init/4 line 134
+2018-01-04 21:47:02.487 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 21:47:02.495 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-04 21:47:09.501 [info] <0.31.0> Application mnesia started on node nonode@nohost
+2018-01-04 21:49:15.190 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 21:49:15.197 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-04 21:49:23.194 [info] <0.31.0> Application mnesia started on node nonode@nohost
+2018-01-04 21:55:38.208 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 21:55:38.216 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-04 21:55:46.493 [info] <0.31.0> Application mnesia started on node nonode@nohost
+2018-01-04 22:03:32.503 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 22:03:32.513 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-04 22:03:41.964 [info] <0.31.0> Application mnesia started on node nonode@nohost
+2018-01-04 22:07:55.830 [info] <0.31.0> Application lager started on node nonode@nohost
+2018-01-04 22:07:55.838 [info] <0.31.0> Application gb_server started on node nonode@nohost
+2018-01-04 22:08:03.387 [info] <0.31.0> Application mnesia started on node nonode@nohost

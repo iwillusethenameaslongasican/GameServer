@@ -74,6 +74,10 @@ id_to_name(30011) ->
 	c2s_result_request;
 id_to_name(30012) ->
 	s2c_result_reply;
+id_to_name(30013) ->
+	c2s_get_supply_request;
+id_to_name(30014) ->
+	s2c_get_supply_reply;
 id_to_name(40001) ->
 	c2s_chat_request;
 id_to_name(40002) ->
@@ -167,6 +171,10 @@ name_to_id(c2s_result_request) ->
 	30011;
 name_to_id(s2c_result_reply) ->
 	30012;
+name_to_id(c2s_get_supply_request) ->
+	30013;
+name_to_id(s2c_get_supply_reply) ->
+	30014;
 name_to_id(c2s_chat_request) ->
 	40001;
 name_to_id(s2c_chat_reply) ->

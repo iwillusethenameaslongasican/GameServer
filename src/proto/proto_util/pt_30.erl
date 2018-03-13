@@ -22,9 +22,8 @@ read(30005, <<Bin/binary>>) ->
   % lager:info("update_unit"),
   Msg = fight_pb:decode_c2s_update_unit_request(Bin),
   #c2s_update_unit_request{pos_x = PosX, pos_y = PosY, pos_z = PosZ, 
-                          rot_x =RotX, rot_y = RotY, rot_z = RotZ,
-                          gun_rot = GunRot, gun_roll = GunRoll} = Msg,
-  {ok, [PosX, PosY, PosZ, RotX, RotY, RotZ, GunRot, GunRoll]};
+                          rot_x =RotX, rot_y = RotY, rot_z = RotZ} = Msg,
+  {ok, [PosX, PosY, PosZ, RotX, RotY, RotZ]};
 
 %% 发射炮弹
 read(30007, <<Bin/binary>>) ->
@@ -40,6 +39,13 @@ read(30009, <<Bin/binary>>) ->
   Msg = fight_pb:decode_c2s_hit_request(Bin),
   #c2s_hit_request{enemy_id = EnemyId, damage = Damage} = Msg,
   {ok, [EnemyId, Damage]};
+
+%% 取得补给
+read(30013, <<Bin/binary>>) ->
+  lager:info("get_supply"),
+  % Msg = fight_pb:decode_c2s_get_reply_request(Bin),
+  % #c2s_get_supply_request{id = Id} = Msg,
+  {ok, []};
 
 read(_Cmd, _R) ->
     {error, no_match}.
@@ -58,10 +64,9 @@ write(30004, {Count, Objects}) ->
     NewPkt = encode(s2c_fight_reply, Pkt),
     {ok, NewPkt};
 
-write(30006, {RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ, GunRot, GunRoll}) ->
+write(30006, {RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ}) ->
     Msg = #s2c_update_unit_reply{id = RoleId, pos_x = PosX, pos_y = PosY, pos_z = PosZ, 
-                                 rot_x =RotX, rot_y = RotY, rot_z = RotZ,
-                                 gun_rot = GunRot, gun_roll = GunRoll},
+                                 rot_x =RotX, rot_y = RotY, rot_z = RotZ},
     % lager:info("Msg: ~p", [Msg]),  
     Pkt = fight_pb:encode_s2c_update_unit_reply(Msg),
     NewPkt = encode(s2c_update_unit_reply, Pkt),
@@ -87,6 +92,13 @@ write(30012, {Camp}) ->
     lager:info("Msg: ~p", [Msg]),  
     Pkt = fight_pb:encode_s2c_result_reply(Msg),
     NewPkt = encode(s2c_result_reply, Pkt),
+    {ok, NewPkt};
+
+write(30014, {Ret}) ->
+    Msg = #s2c_get_supply_reply{ret = Ret},
+    lager:info("Msg: ~p", [Msg]),  
+    Pkt = fight_pb:encode_s2c_get_supply_reply(Msg),
+    NewPkt = encode(s2c_get_supply_reply, Pkt),
     {ok, NewPkt};
 
 write(_Cmd, _R) ->
@@ -127,6 +139,12 @@ encode(c2s_result_request, Msg)->
    encode_1(Id, Msg);
 encode(s2c_result_reply, Msg) ->
     Id = proto_util:name_to_id(s2c_result_reply),
+    encode_1(Id, Msg);
+encode(c2s_get_supply_request, Msg)->
+   Id = proto_util:name_to_id(c2s_get_supply_request),
+   encode_1(Id, Msg);
+encode(s2c_get_supply_reply, Msg) ->
+    Id = proto_util:name_to_id(s2c_get_supply_reply),
     encode_1(Id, Msg);
 encode(Undefied, _Msg) ->
     undefied.

@@ -48,7 +48,7 @@ handle_call(stop, _From, State) ->
 handle_call(_Request, _From, State) ->
 	{noreply, State}.
 
-handle_cast({update_unit, [RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ, GunRot, GunRoll]}, State) ->
+handle_cast({update_unit, [RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ]}, State) ->
 	Sockets = maps:get(0, State),
 	FightInfo = maps:get(RoleId, State),
 	NewFightInfo = FightInfo#fight_info{
@@ -58,16 +58,36 @@ handle_cast({update_unit, [RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ, GunRot, G
 						pos_z = PosZ
 						},
 	State1 = maps:put(RoleId, NewFightInfo, State),
-	{ok, Pkt} = pt_30:write(proto_util:name_to_id(s2c_update_unit_reply), {RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ, GunRot, GunRoll}),
+	{ok, Pkt} = pt_30:write(proto_util:name_to_id(s2c_update_unit_reply), {RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ}),
 	lib_send:broadcast(Sockets, Pkt),
 	{noreply, State1};
 
+handle_cast({get_supply, [RoleId]}, State) ->
+	FightInfo = maps:get(RoleId, State),
+	NewFightInfo = FightInfo#fight_info{
+						bullet = FightInfo#fight_info.bullet + 1
+						},
+	State1 = maps:put(RoleId, NewFightInfo, State),
+	{noreply, State1};
 
 handle_cast({shooting, [RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ]}, State) ->
-	Sockets = maps:get(0, State),
-	{ok, Pkt} = pt_30:write(proto_util:name_to_id(s2c_shooting_reply), {RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ}),
-	lib_send:broadcast(Sockets, Pkt),
-	{noreply, State};
+	FightInfo = maps:get(RoleId, State),
+	Bullet = FightInfo#fight_info.bullet,
+	Socket = FightInfo#fight_info.socket,
+	if Bullet < 1 ->
+		{ok, Pkt} = pt_30:write(proto_util:name_to_id(s2c_shooting_reply), {0, PosX, PosY, PosZ, RotX, RotY, RotZ}),
+		lib_send:send(Socket, Pkt),
+		State1 = State;
+	   true ->
+		Sockets = maps:get(0, State),
+		{ok, Pkt} = pt_30:write(proto_util:name_to_id(s2c_shooting_reply), {RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ}),
+		lib_send:broadcast(Sockets, Pkt),
+		NewFightInfo = FightInfo#fight_info{
+						bullet = FightInfo#fight_info.bullet - 1
+						},
+		State1 = maps:put(RoleId, NewFightInfo, State)
+	end,
+	{noreply, State1};
 
 handle_cast({hit, [RoleId, EnemyId, Damage]}, State) ->
 	Sockets = maps:get(0, State),

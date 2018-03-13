@@ -32,7 +32,7 @@
 -ifndef(C2S_LOGOUT_REQUEST_PB_H).
 -define(C2S_LOGOUT_REQUEST_PB_H, true).
 -record(c2s_logout_request, {
-    id = erlang:error({required, id})
+    
 }).
 -endif.
 

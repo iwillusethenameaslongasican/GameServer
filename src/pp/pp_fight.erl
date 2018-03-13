@@ -32,10 +32,10 @@ handle(30001, Status, Data) ->
 	end;
 
 handle(30005, Status, Data) ->
-	[PosX, PosY, PosZ, RotX, RotY, RotZ, GunRot, GunRoll] = Data,
+	[PosX, PosY, PosZ, RotX, RotY, RotZ] = Data,
 	#ets_role{id = RoleId, room_id = RoomId} = Status,
 	Fpid = lib_scene:get_fpid(RoomId),
-	gen_server:cast(Fpid, {update_unit, [RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ, GunRot, GunRoll]});
+	gen_server:cast(Fpid, {update_unit, [RoleId, PosX, PosY, PosZ, RotX, RotY, RotZ]});
 
 handle(30007, Status, Data) ->
 	[PosX, PosY, PosZ, RotX, RotY, RotZ] = Data,
@@ -56,6 +56,13 @@ handle(30011, Status, Data) ->
 	lib_send:send(Socket, Pkt),
 	FPid = lib_scene:get_fpid(RoomId),
 	fight_serv:stop(FPid);
+
+handle(30013, Status, _Data) ->
+	#ets_role{id = RoleId, socket = Socket, room_id = RoomId} = Status,
+	FPid = lib_scene:get_fpid(RoomId),
+	gen_server:cast(FPid, {get_supply, [RoleId]}),
+	{ok, Pkt} = pt_30:write(proto_util:name_to_id(s2c_get_supply_reply), {1}),
+	lib_send:send(Socket, Pkt);
 
 handle(_, [], _Date) ->
 	false.

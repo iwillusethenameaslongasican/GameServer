@@ -57,6 +57,7 @@ get_fight_info(RoleInfos) ->
 				last_shoot_time = 0,
 				team = Team,
 				hp = 100000,
+				bullet = 0,
 				rpid = Pid,
 				socket = Socket
 			},
@@ -73,7 +74,7 @@ update_win(State) ->
 				if X =:= 0 ->
 						Lists;
 				   true ->
-				   		{fight_info, _, _, _, _, _, _, Team, _Socket, Pid, _} = Y,
+				   		{fight_info, _, _, _, _, _, _, Team, _, _, Pid, _} = Y,
 				   		lager:info("Pid:~p", [{Pid}]),
 				   		gen_server:cast(Pid, {finish_game, IsWin, Team})
 				end
@@ -88,7 +89,7 @@ is_win(State) ->
 				if X =:= 0 ->
 						{Count1, Count2};
 				   true ->
-				   		{fight_info, _, _, _, _, _, _, Team, Hp, _, _} = Y,
+				   		{fight_info, _, _, _, _, _, _, Team, Hp, _, _, _} = Y,
 				   		lager:info("Team, Hp:~p", [{Team, Hp}]),
 				   		if (Team =:= 1) andalso (Hp > 0) ->
 				   				{Count1 + 1, Count2};
@@ -115,7 +116,7 @@ get_pids(State) ->
 				if X =:= 0 ->
 						Lists;
 				   true ->
-				   		{fight_info, _, _, _, _, _, _, _, _, Pid, _} = Y,
+				   		{fight_info, _, _, _, _, _, _, _, _, _, Pid, _} = Y,
 				   		[Pid|Lists]
 				end
 	end,

@@ -35,9 +35,7 @@
     pos_z = erlang:error({required, pos_z}),
     rot_x = erlang:error({required, rot_x}),
     rot_y = erlang:error({required, rot_y}),
-    rot_z = erlang:error({required, rot_z}),
-    gun_rot = erlang:error({required, gun_rot}),
-    gun_roll = erlang:error({required, gun_roll})
+    rot_z = erlang:error({required, rot_z})
 }).
 -endif.
 
@@ -50,9 +48,7 @@
     pos_z = erlang:error({required, pos_z}),
     rot_x = erlang:error({required, rot_x}),
     rot_y = erlang:error({required, rot_y}),
-    rot_z = erlang:error({required, rot_z}),
-    gun_rot = erlang:error({required, gun_rot}),
-    gun_roll = erlang:error({required, gun_roll})
+    rot_z = erlang:error({required, rot_z})
 }).
 -endif.
 
@@ -109,6 +105,20 @@
 -define(S2C_RESULT_REPLY_PB_H, true).
 -record(s2c_result_reply, {
     camp = erlang:error({required, camp})
+}).
+-endif.
+
+-ifndef(C2S_GET_SUPPLY_REQUEST_PB_H).
+-define(C2S_GET_SUPPLY_REQUEST_PB_H, true).
+-record(c2s_get_supply_request, {
+    
+}).
+-endif.
+
+-ifndef(S2C_GET_SUPPLY_REPLY_PB_H).
+-define(S2C_GET_SUPPLY_REPLY_PB_H, true).
+-record(s2c_get_supply_reply, {
+    ret = erlang:error({required, ret})
 }).
 -endif.
 

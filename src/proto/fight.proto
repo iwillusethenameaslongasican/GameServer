@@ -27,8 +27,6 @@ message c2s_update_unit_request{
 	required int32 rot_x 		= 4;
 	required int32 rot_y 		= 5;
 	required int32 rot_z 		= 6;
-	required int32 gun_rot 		= 7;
-	required int32 gun_roll 	= 8;
 }
 
 //位置同步协议
@@ -40,8 +38,6 @@ message s2c_update_unit_reply{
 	required int32 rot_x 		= 5;
 	required int32 rot_y 		= 6;
 	required int32 rot_z 		= 7;
-	required int32 gun_rot 		= 8;
-	required int32 gun_roll 	= 9;
 }
 
 //发射炮弹
@@ -84,6 +80,14 @@ message c2s_result_request{
 
 message s2c_result_reply{
 	required int32 camp 		= 1;
+}
+
+//取得补给
+message c2s_get_supply_request{
+}
+
+message s2c_get_supply_reply{
+	required int32 ret 			= 1;
 }
 
 message object_info{
